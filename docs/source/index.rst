@@ -1,3 +1,4 @@
+.. include:: urls.rst
 .. include:: intro.rst
 
 .. toctree::
@@ -91,5 +92,4 @@
     :caption: Resources
     :hidden:
 
-    guides/index.rst
-    |BCOME_SOURCE|_.
+    |GUIDES|_
