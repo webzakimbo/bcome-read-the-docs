@@ -92,4 +92,5 @@
     :caption: Resources
     :hidden:
 
-    |GUIDES|_
+    |BCOME_SOURCE|_.
+    |GUIDES|_.
