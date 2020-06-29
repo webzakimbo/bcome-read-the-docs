@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-#
-# Configuration file for the Sphinx documentation builder.
-#
-# This file does only contain a selection of the most common options. For a
-# full list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
-
-# -- Path setup --------------------------------------------------------------
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -16,18 +6,19 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
 
 project = u'Bcome'
-copyright = u'2020, webzakimbo'
-author = u'webzakimbo'
+copyright = u'2020 Webzakimbo Ltd.'
+
+author = u'Webzakimbo Ltd.'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'1.3.0'
+release = u'2.0.0'
 
+html_logo = 'img/temp-logo.png'
 
 # -- General configuration ---------------------------------------------------
 
@@ -45,8 +36,14 @@ extensions = [
     'sphinx.ext.autosectionlabel'
 ]
 
+autosectionlabel_prefix_document = True
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+html_css_files = [
+  'css/override-default.css'
+]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -62,7 +59,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -84,7 +81,10 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+  'prev_next_buttons_location': None,
+  'logo_only': True
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -132,7 +132,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'test.tex', u'test Documentation',
+    (master_doc, 'bcome.tex', u'Bcome documentation',
      u'webzakimbo', 'manual'),
 ]
 
@@ -142,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'test', u'test Documentation',
+    (master_doc, 'webzakimbo', u'Bcome documentation',
      [author], 1)
 ]
 
@@ -153,8 +153,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'test', u'test Documentation',
-     author, 'test', 'One line description of project.',
+    (master_doc, 'test', u'Bcome documentation',
+     author, 'webzakimbo', 'Bcome - a devops-application framework.',
      'Miscellaneous'),
 ]
 
