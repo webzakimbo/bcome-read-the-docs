@@ -7,7 +7,7 @@ What's new in 2.0.0
 Google Cloud Platform
 ---------------------
 
-You may now retrieve machines from GCP. 
+You may now integrate GCP. 
 
 See: :doc:`getting-started/prepare-gcp-access`
 
