@@ -91,5 +91,8 @@
     :maxdepth: 1
     :caption: Resources
 
-    |BCOME_SOURCE|_.
-    |GUIDES|_.
+    Guides <https://guides.bcome.com> 
+    Source Code <https://github.com/webzakimbo/bcome-kontrol>
+    Ruby Gem <https://rubygems.org/gems/bcome>
+    Ruby Doc <https://www.rubydoc.info/gems/bcome/1.4.0>
+
