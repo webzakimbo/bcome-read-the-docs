@@ -95,4 +95,8 @@
     Source Code <https://github.com/webzakimbo/bcome-kontrol>
     Ruby Gem <https://rubygems.org/gems/bcome>
     Ruby Doc <https://www.rubydoc.info/gems/bcome/2.0.0>
+    Guidex <|GUIDE_URL|>
+    Guidey <|GUIDE_URL_Y>
+
+    .. |GUIDE_URL| replace:: https://guides.bcome.com
 

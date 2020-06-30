@@ -1,14 +1,6 @@
 .. meta::
    :description lang=en: What's new in Bcome 2.0.0
 
-|RST|_ is a little annoying to type over and over, especially
-when writing about |RST| itself, and spelling out the
-bicapitalized word |RST| every time isn't really necessary for
-|RST| source readability.
-
-.. |RST| replace:: reStructuredText
-.. _RST: http://docutils.sourceforge.net/rst.html
-
 What's new in 2.0.0
 ====================
 
