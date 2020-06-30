@@ -22,7 +22,7 @@ See: :doc:`network/static-manifests`
 Merged Inventories
 ------------------
 
-Create inventories merging in inventories from disparate networks, clouds or static/on-premise configurations. 
+Merge inventories from disparate networks, clouds or static/on-premise configurations. 
 
 This will give you installations that are:
 
