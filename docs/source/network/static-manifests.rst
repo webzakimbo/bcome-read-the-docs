@@ -5,6 +5,9 @@
 Static manifests
 ****************
 
+Overview
+========
+
 If you have infrastructure on-site, or in any other provider for which Bcome does not yet provide a driver, you may utilise a Static Manifest.
 
 A Static Manifest is a list of manually configured servers that can be used to populate a specified Inventory.
@@ -44,7 +47,53 @@ Here's a simple example of a Static Manifest entry within our static-cache.yml f
    - identifier: file_server_one
      public_ip_address: 123.123.123.12
      description: My server
+     cloud_tags:
+       data:
+         a_key: a_value
+         another_key: another_value
    - identifier: some_other_server
      public_ip_address: 678.678.678.67
+     internal_ip_address: 10.2.23.12
      description: My other server
 
+Attribute List
+==============
+
+Below are the attribuites required in order to define a static server.
+
++-----------------------------+-----------------------------+----- ----------------+--------------------------------------------------------------------------------+
+|                             |                             |                      |                                                                                |
+|   attribute key             |  description                |  optional            |   notes                                                                        |
++=============================+=============================+======================+================================================================================+
+|  identifier		      |  The server name.           |  No	           |  Bcome will automatically swap whitespace for underscores, and auto-increment  |
+|			      |		                    |			   |  duplicate identifiers. 		 					    |	
+|			      |  How this server is         | 			   |										    |
+|			      |  identified.                |			   |										    |
++-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
+|  description                |  The server description     |  No		   |  A description of the server.  This will appear in Bcome's UI.		    |
+|			      |				    |			   |										    |
++-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
+|  public_ip_address          |  The public interface IP    |  Yes		   |  You may use a hostname here also.						    |  
+|			      |  address.     	            |                      |										    |
++-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
+|  internal_ip_address	      |  The internal interface IP  |  Yes		   |  You may use a hostname here also.				                    |
+|			      |  address.		    |  		           |										    |
++-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
+|  cloud_tags                 |  A Hash of tags keys and    |  Yes		   |  See :ref:`TAG_ATTRS` for structure					    |
+|			      |  values, keyed on :data     | 			   |										    |
++-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
+
+.. _TAG_ATTRS:
+
+Tag attributes
+^^^^^^^^^^^^^^
+
+Cloud tag attributes have the following YAML structure:
+
+.. code-block:: yaml
+
+  ---
+  cloud_tags:
+    data:
+      tag_key_1: tag_value_1
+      tag_key_2: tag_value_2
