@@ -90,7 +90,6 @@
 .. toctree::
     :maxdepth: 1
     :caption: Resources
-    :hidden:
 
     |BCOME_SOURCE|_.
     |GUIDES|_.
