@@ -39,4 +39,5 @@ Configure chains of SSH proxies, allowing for transparent multi-hop setups.
 Metadata
 --------
 
-Metadata now has a 'diff' function.
+Metadata now has a 'diff' function see :doc:`metadata/metadata-encryption`
+
