@@ -1,7 +1,4 @@
 
-
-.. |GUIDE_URL_Y| replace:: https://guides.bcome.com
-
 .. |RST| replace:: reStructuredText
 .. _RST: http://docutils.sourceforge.net/rst.html
 
