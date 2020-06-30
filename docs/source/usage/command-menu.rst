@@ -48,19 +48,6 @@ Navigation commands
 |			      |  				     |					     |
 |			      |	 Console only			     |					     |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|   ls                        |  List all child namespaces.          | Collection, Inventory, Sub-selected   |
-|                             |                                      | Inventory, Merged Inventory.          |
-|                             |  *Console only*                      |                                       |
-+-----------------------------+--------------------------------------+---------------------------------------+
-|   lsa                       |  List all active child namespaces    | Collection, Inventory, Sub-selected   |                                      
-|                             |                                      | Inventory, Merged Inventory.          |
-|                             |  See :ref:`SELECTION_COMMANDS`       |                                       |
-|                             |                                      |                                       |
-|                             |  *Console only*                      |                                       |
-+-----------------------------+--------------------------------------+---------------------------------------+
-|   tree                      |  Print a tree view of all child      | Collection, Inventory, Sub-selected   |                                      
-|			      |  namespaces and their sub-namespaces.| Inventory, Merged Inventory.          |				             
-+-----------------------------+--------------------------------------+---------------------------------------+
 |   back                      |  Return to the parent namespace      | All                                   |
 |                             |  console session.                    |                                       |
 |                             |                                      | 					     |
@@ -79,10 +66,6 @@ Navigation commands
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
-
-
-
-
 
 .. _SELECTION_COMMANDS:
 
@@ -195,6 +178,19 @@ Informational
 |                             |                                      |                                       |
 |  command                    |  description                         | namespace availability                |
 +=============================+======================================+=======================================+
+|  ls                         |  List all child namespaces.          | Collection, Inventory, Sub-selected   |
+|                             |                                      | Inventory, Merged Inventory.          |
+|                             |  *Console only*                      |                                       |
++-----------------------------+--------------------------------------+---------------------------------------+
+|  lsa                        |  List all active child namespaces    | Collection, Inventory, Sub-selected   |
+|                             |                                      | Inventory, Merged Inventory.          |
+|                             |  See :ref:`SELECTION_COMMANDS`       |                                       |
+|                             |                                      |                                       |
+|                             |  *Console only*                      |                                       |
++-----------------------------+--------------------------------------+---------------------------------------+
+|  tree                       |  Print a tree view of all child      | Collection, Inventory, Sub-selected   |
+|                             |  namespaces and their sub-namespaces.| Inventory, Merged Inventory.          |
++-----------------------------+--------------------------------------+---------------------------------------+
 |  meta                       |  List all Metadata available to      | All				     |
 |			      |  the current namespace.		     |					     |
 |			      |					     |					     |
