@@ -64,9 +64,8 @@ Attribute List
 |   attribute key             |  description                |  optional            |   notes                                                                        |
 +=============================+=============================+======================+================================================================================+
 |  identifier		      |  The server name.           |  No	           |  Bcome will automatically swap whitespace for underscores, and auto-increment  |
-|			      |		                    |			   |  duplicate identifiers. 		 					    |	
-|			      |  How this server is         | 			   |										    |
-|			      |  identified.                |			   |										    |
+|			      |		                    |			   |  duplicate identifiers.  A server's identifier is incorporated into its        |
+|			      |				    |			   |  namespace breadcrumb.	
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
 |  description                |  The server description     |  No		   |  A description of the server.  This will appear in Bcome's UI.		    |
 |			      |				    |			   |										    |
