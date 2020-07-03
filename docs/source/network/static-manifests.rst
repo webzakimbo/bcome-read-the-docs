@@ -76,10 +76,11 @@ Attribute List
 |  internal_ip_address	      |  The internal interface IP  |  Yes		   |  You may use a hostname here also.				                    |
 |			      |  address.		    |  		           |										    |
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
-|  local_network              |  Set to true or false       |  Yes                 |  If a set with local_network: true, Bcome will initiate SSH connections on     | 
-|			      |  Indicates whether the      |                      |  the internal_ip_address. If we to false, connections will fallback to         |
-|			      |  server is to be found on   |			   |  proxy (if configured), in the namespace's network configuration or to the     |
-|			      |  the local network.         |			   |  public_ip_address. 						            |
+|  local_network              |  Set to true or false.      |  Yes                 |  If a set with local_network: true, Bcome will initiate SSH connections on     | 
+|		              |				    |			   |  the internal_ip_address. If set to false, connections will fallback to        |
+|			      |  Indicates whether the      |                      |  proxy (if configured), in the namespace's network configuration or to the     |
+|			      |  server is to be found on   |			   |  public_ip_address.				                            |
+|			      |  the local network.         |			   |                     						            |
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
 |  cloud_tags                 |  A Hash of tags keys and    |  Yes		   |  See :ref:`TAG_ATTRS` for structure					    |
 |			      |  values, keyed on :data     | 			   |										    |
