@@ -65,7 +65,7 @@ Attribute List
 +=============================+=============================+======================+================================================================================+
 |  identifier		      |  The server name.           |  No	           |  Bcome will automatically swap whitespace for underscores, and auto-increment  |
 |			      |		                    |			   |  duplicate identifiers.  A server's identifier is incorporated into its        |
-|			      |				    |			   |  namespace breadcrumb.	
+|			      |				    |			   |  namespace breadcrumb.							    |
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
 |  description                |  The server description     |  No		   |  A description of the server.  This will appear in Bcome's UI.		    |
 |			      |				    |			   |										    |
@@ -75,6 +75,11 @@ Attribute List
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
 |  internal_ip_address	      |  The internal interface IP  |  Yes		   |  You may use a hostname here also.				                    |
 |			      |  address.		    |  		           |										    |
++-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
+|  local_network              |  Set to true or false       |  Yes                 |  If a set with local_network: true, Bcome will initiate SSH connections on     | 
+|			      |  Indicates whether the      |                      |  the internal_ip_address. If we to false, connections will fallback to         |
+|			      |  server is to be found on   |			   |  proxy (if configured), in the namespace's network configuration or to the     |
+|			      |  the local network.         |			   |  public_ip_address. 						            |
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
 |  cloud_tags                 |  A Hash of tags keys and    |  Yes		   |  See :ref:`TAG_ATTRS` for structure					    |
 |			      |  values, keyed on :data     | 			   |										    |
