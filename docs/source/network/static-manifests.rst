@@ -78,7 +78,7 @@ Attribute List
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
 |  local_network              |  Set to true or false.      |  Yes                 |  If a set with local_network: true, Bcome will initiate SSH connections on     | 
 |		              |				    |			   |  the internal_ip_address. If set to false, connections will fallback to        |
-|			      |  Indicates whether the      |                      |  proxy (if configured), in the namespace's network configuration or to the     |
+|			      |  Indicates whether the      |                      |  proxy (if configured in the namespace's network configuration) or to the      |
 |			      |  server is to be found on   |			   |  public_ip_address.				                            |
 |			      |  the local network.         |			   |                     						            |
 +-----------------------------+-----------------------------+----------------------+--------------------------------------------------------------------------------+
