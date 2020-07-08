@@ -29,6 +29,10 @@ The most basic example of an external script can be seen below:
 
 All namespaces retrieved by the orchestrator are instances of :doc:`../core-concepts/node`.
 
+.. note::
+
+  To return the root namespace using the orchestrator, pass a null breadcrumb i.e. ``orchestrator.get()`` 
+
 See :doc:`../usage/executing-commands` for invoking commands and :doc:`../usage/command-menu` for a list of commands.
 
 See also :doc:`../usage/node-methods` for a list of public instance methods.
