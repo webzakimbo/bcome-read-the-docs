@@ -41,3 +41,8 @@ Metadata
 
 Metadata now has a 'diff' function see :doc:`metadata/metadata-encryption`
 
+Tree View
+---------
+
+New and improved network tree-view.
+
