@@ -166,6 +166,12 @@ See the full list of configurable attributes here:
 |                             |                             |          | each proxy in the order in which they are declared in the proxy array, position|
 |			      |				    |	       | 0 being first hop.                                                             |
 |			      |				    |	       |										|
+|			      |				    |	       |							                        |
+|			      |				    |	       | If the proxy is a Bcome node, its public_ip_address will be used to route      |
+|		              |				    |          | the connection if present.  If not, Bcome will default to using the node's     |
+|			      |			            |	       | internal IP address.  Using this pattern you may via multiple hops into        |
+|  			      |				    |	       | your networks.					 			        |
+|			      |				    |	       |									        |
 |			      |			            |	       | See :ref:`PROXY_ATTRS`.	    		   	                        |
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
 
