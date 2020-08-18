@@ -9,9 +9,9 @@
 
 Various public-instance methods are made available on the :doc:`../core-concepts/node` object.
 
-Whilst these are generally useful for debugging in Console sessions, they will enhance your orchestration scripts.  For a full reference, please refer to the source code: |BCOME_SOURCE|_.
+These are useful for debugging in Console sessions and for enhancing your orchestration scripts.
 
-A few notable accessors are detailed below:
+Notable accessors are detailed below:
 
 On all namespaces
 =================
@@ -52,7 +52,7 @@ The ``Net::SSH::Proxy::Jump`` configuration, should the namespace be configured 
 Server accessors
 ----------------
 
-All servers present beneath the current namespace, returns an Array of:
+All servers present within the current namespace:
 
 .. code-block:: bash
 
