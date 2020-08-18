@@ -56,4 +56,4 @@ For example, given a namespace in an instance var @node, and a command, :foo, yo
 
 .. hint::
 
-   Any command, be they in-built menu commands (see :doc:`command-menu`), public-methods on a given namespace object, or a custom-command you've defined yourself in the Registry (see :doc:`../registry/overview)`, is accessible in this way.
+   Any command, be they in-built menu commands (see :doc:`command-menu`), public-methods on a given namespace object, or a custom-command you've defined yourself in the Registry (see :doc:`../registry/overview`), is accessible in this way.
