@@ -30,7 +30,7 @@ Support for ProxyCommand will be re-introduced as an override option to ProxyJum
 Merge of static & cached inventories
 ------------------------------------
 
-Static manifests (:doc:`network/static-manifests` are how defined in the same way as Bcome handles the caching of remote inventories.  
+Static manifests (:doc:`network/static-manifests` are now defined in the same way as Bcome handles the caching of remote inventories.  
 
 If you're using static manifests, you will need to rename your ``machines-cache.yml`` to ``static-cache.yml``.
 
