@@ -103,7 +103,7 @@ Bcome would execute the following command:
 
 .. code-block:: bash
 
-   bundle exec cap wbz_frontend deploy build=master bcome_context="gcp:prod:wbzsite"
+   bcome_context="gcp:prod:wbzsite" bundle exec cap wbz_frontend deploy build=master 
 
 Within your external script you would load your namespace context as follows:
 
