@@ -86,3 +86,10 @@ Given a second AWS account referenced by the key 'my other key', your keys file 
    my_other_key:
      aws_access_key_id: [second access key]
      aws_secret_access_key: [second secret access key]
+
+.. note::
+
+   For a demonstration of an AWS authorization in use, please see the |AWS_AUTH_GUIDE|_
+
+   For a full list of namespace attributes, which will help you utilise your AWS authorization within your project, see :doc:`../core-concepts/network-configuration.html`
+

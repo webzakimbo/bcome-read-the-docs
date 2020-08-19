@@ -8,6 +8,15 @@
 .. |ROUTES_GUIDE| replace:: routes guide
 .. _ROUTES_GUIDE: https://guides.bcome.com/en/2.0.0/built-in-commands/routes.html
 
+.. |GCP_AUTH_SA_GUIDE| replace:: GCP Service Account authentication guide
+.. _GCP_AUTH_SA_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/gcp-service-account.html
+
+.. |GCP_OAUTH_GUIDE| replace:: GCP OAuth 2.0 authentication guide
+.. _GCP_OAUTH_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/gcp-oauth.html
+
+.. |AWS_AUTH_GUIDE| replace:: AWS EC2 authentication guide
+.. _AWS_AUTH_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/ec2.html
+
 .. |BCOME_SOURCE| replace:: github source
 .. _BCOME_SOURCE: https://github.com/webzakimbo/bcome-kontrol
 

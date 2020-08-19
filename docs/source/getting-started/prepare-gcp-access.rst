@@ -100,7 +100,12 @@ Service Account authorization requires credentials in JSON format.
      "client_x509_cert_url": "your client x509 cert url"
    }
 
+
+Save your service account credentials json file to your .gauth directory under any name you like. You'll reference this file later on in your networks.yml configuration file.
+
 .. note::
 
-  Save your service account credentials json file to your .gauth directory under any name you like. You'll reference this file later on in your networks.yml configuration file.
+   For demonstrations of GCP authorization in use, please see our guides:  |GCP_OAUTH_GUIDE|_ / |GCP_AUTH_SA_GUIDE|_.
+
+   For a full list of namespace attributes, which will help you utilise your GCP authorization within your project, see :doc:`../core-concepts/network-configuration.html`
 
