@@ -5,6 +5,9 @@
 .. |GUIDES| replace:: Guides
 .. _GUIDES: https://guides.bcome.com 
 
+.. |ROUTES_GUIDE| replace:: routes guide
+.. _ROUTES_GUIDE: https://guides.bcome.com/en/2.0.0/built-in-commands/routes.html
+
 .. |BCOME_SOURCE| replace:: github source
 .. _BCOME_SOURCE: https://github.com/webzakimbo/bcome-kontrol
 

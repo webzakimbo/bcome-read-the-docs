@@ -46,3 +46,10 @@ Tree View
 
 New and improved network tree-view.
 
+Routes view
+-----------
+
+The new ``routes`` command prints out an SSH routing tree for any namespace. See it in action here: |ROUTES_GUIDE|_.
+
+
+
