@@ -129,5 +129,5 @@ For example, to override the connection details for 'server_a' within namespace 
 
 .. note::
 
-  Any server-specific overrides must be placed within the machines-data.yml override file, and cannot be placed in the general or overriden network configuration.
+  Any server-specific overrides must be placed within the server-overrides.yml override file, and cannot be placed in the general or overriden network configuration.
 
