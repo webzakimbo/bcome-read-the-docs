@@ -73,15 +73,6 @@ All metadata for this namespace as a Hash
 
   metadata.all
 
-On inventory namespaces
-=======================
-
-Return all cloud servers tagged or labelled with a key matching any value in a specified Array"
-
-.. code-block:: bash
-
-   cloud_tags.fetch(:tag_or_label_name, ["match1", "match2", "match3"])
-
 On server namespaces
 =====================
 
@@ -106,3 +97,11 @@ Return all configured tags/labels if a cloud server:
 .. note::
 
    @node may also be extended by applying :doc:`../usage/monkey-patches`.
+
+Find cloud tags/labels value by key:
+
+.. code-block:: bash
+
+   cloud_tags.fetch(:tag_or_label_name, "optional_default_value")
+
+
