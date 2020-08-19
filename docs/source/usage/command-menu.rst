@@ -201,9 +201,7 @@ Informational
 |  tags                       |  List all cloud provider tags/labels | Server, Inventory, Sub-selected       | 
 | 			      |  associated with the server(s)       | Inventory, Merged Inventory.          |                             
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  routes		      |  Displays an SSH pathway routing tree| All				     |
-|   			      |  determined from your network        |					     |
-|			      |  configuration.	                     |					     |
+|  routes		      |  Print SSH routing tree.             | All				     |
 +-----------------------------+--------------------------------------+---------------------------------------+
 
 
