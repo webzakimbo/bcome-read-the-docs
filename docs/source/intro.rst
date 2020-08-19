@@ -7,7 +7,7 @@ Bcome documentation
 
 Here you will find what you need to configure the Bcome framework to create your own DevOps application.  
 
-We also have |GUIDES|_ to help you, whilst the source control for the framework can be viewed here: |BCOME_SOURCE|_.
+For functionality demonstrations, please see the |GUIDES|_.
 
 :doc:`whats-new-in-2.0.0`
 
