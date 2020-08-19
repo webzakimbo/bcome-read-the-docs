@@ -1,3 +1,5 @@
+.. include:: urls.rst
+
 .. meta::
    :description lang=en: What's new in Bcome 2.0.0
 
@@ -50,6 +52,4 @@ Routes view
 -----------
 
 The new ``routes`` command prints out an SSH routing tree for any namespace. See it in action here: |ROUTES_GUIDE|_.
-
-
 
