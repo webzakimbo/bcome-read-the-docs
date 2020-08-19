@@ -1,7 +1,7 @@
 .. include:: ../urls.rst
 
 .. meta::
-   :description lang=en: Preparing a GCP account for Bcome: OAuth2.0 or Service Account authorisation
+   :description lang=en: Preparing a GCP account for Bcome: OAuth 2.0 or Service Account authorisation
 
 *****************
 GCP authorization
@@ -13,7 +13,7 @@ If you want to integrate a GCP account, then follow the steps here.
 
 .. note::
 
-   You may connect as many GCP accounts as you like (using a mix of OAuth & Service Account authorisation), and mix with as many accounts from other cloud providers. 
+   You may connect as many GCP accounts as you like (using a mix of OAuth 2.0 & Service Account authorisation), and mix with as many accounts from other cloud providers. 
 
    Bcome will allow you to interact with them all in the same project.
 

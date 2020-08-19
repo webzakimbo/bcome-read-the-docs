@@ -101,7 +101,7 @@ Google Cloud platform specific network attributes
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |  zone                       | GCP zone                    |  Required for 'gcp' provider type     | For a full list of zones see: |GCP_ZONES|_.                                    |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
-|  authentication_scheme      | GCP authentication scheme   |  Required for 'gcp' provider type     | Supported schemes are 'oauth' or 'service_account'. For OAuth setup see        |
+|  authentication_scheme      | GCP authentication scheme   |  Required for 'gcp' provider type     | Supported schemes are 'oauth' or 'service_account'. For OAuth 2.0 setup see    |
 |                             |                             |          			            | :doc:`../getting-started/prepare-gcp-access`                                   |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |  service_scopes             | An array of GCP auth scopes |  Optional for 'gcp' provider type     | A minimum scope of |GCP_SCOPE_COMPUTE_READONLY|_ is                            |
@@ -116,7 +116,7 @@ Google Cloud platform specific network attributes
 |                             | file, to be found within    |          				    |                                                                                |
 |                             | the .gauth directory.       |         			            |                                                                                |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
-|  secrets_filename           | The name of your OAuth 2    | Optional for 'gcp' provider type	    | Required for the oauth authentication scheme only. 		             |
+|  secrets_filename           | The name of your OAuth 2.0  | Optional for 'gcp' provider type	    | Required for the oauth authentication scheme only. 		             |
 |			      | clients secrets filename    | 				            | See :doc:`../getting-started/prepare-gcp-access`.				     |
 |			      | to be found within the      |			                    |										     |	
 |			      | .gauth directory.	    |					    |									             |
