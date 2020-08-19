@@ -94,14 +94,12 @@ Return all configured tags/labels if a cloud server:
 
    tags_h
 
-.. note::
-
-   @node may also be extended by applying :doc:`../usage/monkey-patches`.
-
 Find cloud tags/labels value by key:
 
 .. code-block:: bash
 
    cloud_tags.fetch(:tag_or_label_name, "optional_default_value")
 
+.. note::
 
+   @node may also be extended by applying :doc:`../usage/monkey-patches`.
