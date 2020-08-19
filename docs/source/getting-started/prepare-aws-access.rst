@@ -1,4 +1,4 @@
-.. include:: urls.rst
+.. include:: ../urls.rst
 
 .. meta::
    :description lang=en: Preparing an AWS account authorization for Bcome.
