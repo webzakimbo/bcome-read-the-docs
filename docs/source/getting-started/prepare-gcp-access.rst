@@ -13,14 +13,14 @@ If you want to integrate a GCP account, then follow the steps here.
 
 .. note::
 
-   You may connect as many GCP accounts as you like (using a mix of Oauth & Service Account authorisation), and mix with as many accounts from other cloud providers. 
+   You may connect as many GCP accounts as you like (using a mix of OAuth & Service Account authorisation), and mix with as many accounts from other cloud providers. 
 
    Bcome will allow you to interact with them all in the same project.
 
 Create directory structure
 ==========================
 
-For both ``Oauth 2.0`` and ``Service account`` authorisation methods, create a directory named ``.gauth`` in the root of your project directory.
+For both ``OAuth 2.0`` and ``Service account`` authorisation methods, create a directory named ``.gauth`` in the root of your project directory.
 
 If you've correctly setup your project directory structure (see: :doc:`create-project-structure`), your directory structure should now look like::
 
@@ -32,10 +32,10 @@ If you've correctly setup your project directory structure (see: :doc:`create-pr
 
 .. _O_AUTH_2_0:
 
-Oauth 2.0
+OAuth 2.0
 =========
 
-To integrate Oauth 2.0 with Bcome, you'll need to create a client id and secret.  To do this, follow these steps:
+To integrate OAuth 2.0 with Bcome, you'll need to create a client id and secret.  To do this, follow these steps:
 
 * Login to your |GCP_CONSOLE|_
 * From your projects list select your project (or create a new one)
@@ -73,7 +73,7 @@ As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compu
 
 .. permissions::
 
-   Your Oauth 2.0 users will need as minimum the ``compute.instances.list`` permission.
+   Your OAuth 2.0 users will need as minimum the ``compute.instances.list`` permission.
 
 .. _SERVICE_ACCOUNT:
 

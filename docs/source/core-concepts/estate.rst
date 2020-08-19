@@ -44,4 +44,4 @@ Any combination of the above e.g. on-premise infrastructure that you wish to orc
 
 .. note::
 
-   Bcome will allow you to merge all your infrastructure into one installation, such that you may orchestrate across clouds & networks at the same time.
+   Bcome will allow you to merge all your infrastructure into one installation, such that you may orchestrate across your different clouds & networks at the same time.

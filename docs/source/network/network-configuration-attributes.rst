@@ -116,7 +116,7 @@ Google Cloud platform specific network attributes
 |                             | file, to be found within    |          				    |                                                                                |
 |                             | the .gauth directory.       |         			            |                                                                                |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
-|  secrets_filename           | The name of your Oauth 2    | Optional for 'gcp' provider type	    | Required for the oauth authentication scheme only. 		             |
+|  secrets_filename           | The name of your OAuth 2    | Optional for 'gcp' provider type	    | Required for the oauth authentication scheme only. 		             |
 |			      | clients secrets filename    | 				            | See :doc:`../getting-started/prepare-gcp-access`.				     |
 |			      | to be found within the      |			                    |										     |	
 |			      | .gauth directory.	    |					    |									             |
