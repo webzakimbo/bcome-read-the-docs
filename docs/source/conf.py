@@ -34,7 +34,6 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosectionlabel',
-    'sphinxcontrib.googleanalytics',
 ]
 
 autosectionlabel_prefix_document = True
@@ -176,9 +175,5 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
-# -- Analytics
-googleanalytics_id = "UA-110452294-1"
 
 # -- Extension configuration -------------------------------------------------
