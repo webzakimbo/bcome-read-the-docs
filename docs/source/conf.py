@@ -179,6 +179,6 @@ epub_exclude_files = ['search.html']
 
 
 # -- Analytics
-googleanalytics_id "UA-110452294-1"
+googleanalytics_id = "UA-110452294-1"
 
 # -- Extension configuration -------------------------------------------------
