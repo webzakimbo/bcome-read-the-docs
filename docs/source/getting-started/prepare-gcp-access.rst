@@ -3,9 +3,9 @@
 .. meta::
    :description lang=en: Preparing a GCP account for Bcome: OAuth 2.0 or Service Account authorisation
 
-*****************
-GCP authorization
-*****************
+************************
+Adding GCP authorization
+************************
 
 GCP authorisation may be achieved either via :ref:`O_AUTH_2_0`, and/or by directly linking a :ref:`SERVICE_ACCOUNT`.
 

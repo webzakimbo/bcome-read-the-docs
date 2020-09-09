@@ -3,9 +3,9 @@
 .. meta::
    :description lang=en: Preparing an AWS account authorization for Bcome.
 
-*****************
-AWS authorization
-*****************
+************************
+Adding AWS authorization
+************************
 
 AWS authorization is achieved by linking an AWS IAM user with your local instance of the Bcome client.
 
