@@ -90,6 +90,7 @@
 .. toctree::
     :maxdepth: 1
     :caption: Resources
+    :hidden:
 
     About <https://bcome.com>
     Guides <https://guides.bcome.com> 
