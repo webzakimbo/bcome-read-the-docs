@@ -93,4 +93,4 @@ Given a second AWS account referenced by the key 'my other key', your keys file 
 
 .. hint::
 
-   To add your AWS authorization within to your network configuration, see :doc:`../core-concepts/network-configuration`. 
+   To add your AWS authorization to your network configuration, see :doc:`../core-concepts/network-configuration`. 

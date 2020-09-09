@@ -109,5 +109,5 @@ Save your service account credentials json file to your .gauth directory under a
 
 .. hint::
 
-   To add your GCP authorization within to your network configuration, see :doc:`../core-concepts/network-configuration`.
+   To add your GCP authorization to your network configuration, see :doc:`../core-concepts/network-configuration`.
 
