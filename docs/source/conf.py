@@ -41,6 +41,8 @@ autosectionlabel_prefix_document = True
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+html_favicon = 'images/favicon.png'
+
 html_css_files = [
   'css/override-default.css'
 ]
