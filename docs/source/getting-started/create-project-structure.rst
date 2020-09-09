@@ -1,9 +1,12 @@
 .. meta::
    :description lang=en: Bcome - create your project structure
 
-*****************************
+***************
+Getting Started
+***************
+
 Create your project structure
-*****************************
+=============================
 
 Create a project directory:
 
@@ -52,3 +55,12 @@ Your project directory should now look as follows:
    ├── Gemfile
    └── bcome
        └── networks.yml
+
+
+Populate your networks.yml configuration
+========================================
+
+Once you've created your project structure, the next step is to populate you networks.yml configuration file with your namespace structure.
+
+See :doc:`../core-concepts/network-configuration` for further information.
+

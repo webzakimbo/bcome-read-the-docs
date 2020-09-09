@@ -24,7 +24,7 @@ Namespaces are laid out in a parent - child format, for example:
 
 .. code-block:: yaml
 
-   ```
+   ---
    grandparent:
      description: "The grandparent"
      type: collection
