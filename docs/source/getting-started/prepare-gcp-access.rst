@@ -107,4 +107,7 @@ Save your service account credentials json file to your .gauth directory under a
 
    For demonstrations of GCP authorization in use, please see our guides:  |GCP_OAUTH_GUIDE|_ / |GCP_AUTH_SA_GUIDE|_.
 
-   For a full list of namespace attributes, which will help you utilise your GCP authorization within your project, see :doc:`../core-concepts/network-configuration`
+.. hint::
+
+   To add your GCP authorization within to your network configuration, see :doc:`../core-concepts/network-configuration`.
+

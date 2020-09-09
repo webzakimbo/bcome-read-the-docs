@@ -91,4 +91,6 @@ Given a second AWS account referenced by the key 'my other key', your keys file 
 
    For a demonstration of an AWS authorization in use, please see the |AWS_AUTH_GUIDE|_
 
-   For a full list of namespace attributes, which will help you utilise your AWS authorization within your project, see :doc:`../core-concepts/network-configuration`
+.. hint::
+
+   To add your AWS authorization within to your network configuration, see :doc:`../core-concepts/network-configuration`. 
