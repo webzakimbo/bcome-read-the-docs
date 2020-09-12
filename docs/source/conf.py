@@ -16,7 +16,7 @@ author = u'Webzakimbo Ltd.'
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'2.0.0'
+release = u'1.4.0'
 
 #html_logo = 'img/temp-logo.png'
 
@@ -42,6 +42,8 @@ autosectionlabel_prefix_document = True
 templates_path = ['_templates']
 
 html_favicon = 'images/favicon.png'
+html_favicon = '_static/images/favicon.png'
+html_logo = '_static/images/bcome-logo-docs.png'
 
 html_css_files = [
   'css/override-default.css'
