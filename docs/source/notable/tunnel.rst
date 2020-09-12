@@ -53,7 +53,7 @@ The tunnel connection is kept open until you Control+C to close the session, or 
 From an orchestration script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Where :doc:`../core-concepts/@node` is an instance of your server namespace:
+Where :doc:`../core-concepts/node` is an instance of your server namespace:
 
 .. code-block:: ruby
 
