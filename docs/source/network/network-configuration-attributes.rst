@@ -77,7 +77,7 @@ Used to configure a namespace
 Network attributes
 ------------------
 
-A Hash of attribute used to populate the top-level ``network`` attribute.
+A Hash of attributes used to populate the top-level ``network`` attribute.
 
 Used to configure a Cloud-provider.
 
