@@ -145,7 +145,7 @@ AWS specific network attributes
 SSH Settings Attributes
 -----------------------
 
-A Hash of attribute used to populate the top-level ``ssh_settings`` attribute.
+A hash of attributes used to populate the top-level ``ssh_settings`` attribute.
 
 .. note::
 
