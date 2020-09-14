@@ -29,7 +29,7 @@ Merge inventories from disparate networks, clouds or static/on-premise configura
 This will give you installations that are:
 
 * multi-network: Orchestrate machines from multiple networks within the same cloud provider at the same time.
-* multi-cloud: Orchestrate machines form multiple-clouds at the same time
+* multi-cloud: Orchestrate machines from multiple-clouds at the same time
 * hybrid-cloud:  Orchestrate your static/on-premise infrasrtucture as well as your Cloud machines at the same time.
 * hybrid-multi-cloud: Create merged multi-cloud & static inventories and orchestrate them all from the same scripts/console.
 
