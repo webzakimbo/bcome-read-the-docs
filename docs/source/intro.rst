@@ -3,7 +3,7 @@ Bcome documentation
 *******************
 
 .. meta::
-   :description lang=en: Bcome dev-ops application development framework documentation.
+   :description lang=en: Bcome dev-ops application development framework documentation.  All you need to configure the Bcome framework to create your own DevOps application.
 
 Here you will find what you need to configure the Bcome framework to create your own DevOps application.  
 
