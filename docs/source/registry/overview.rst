@@ -13,7 +13,7 @@ Each Bcome namespace has its own Registry, the framework giving you a means of a
 
   The Registry is designed for reusability, and so you may associate the same tasks with different namespaces, DRY'ing up your code.
 
-  Have a look also at the :doc:`metadata/metadata-framework`. By associating context-specific data to your namespaces, the same Registry task re-used becomes way more powerful. 
+  Have a look also at the :doc:`../metadata/metadata-framework`. By associating context-specific data to your namespaces, the same Registry task re-used becomes way more powerful. 
 
 Within any namespace in Bcome, invoke the ``registry`` method to view your available methods. 
 
