@@ -5,7 +5,7 @@
 Registry Configuration Attributes
 *********************************
 
-Here you'll find the full list of attributes for your registry.yml file (see: doc:`registry-configiration-file`).
+Here you'll find the full list of attributes for your registry.yml file (see: :doc:`registry-configuration-file`).
 
 +--------------------------+---------------------------------------+---------------------------------------+
 |                          |                                       |                                       |

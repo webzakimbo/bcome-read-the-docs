@@ -17,6 +17,9 @@
 .. |AWS_AUTH_GUIDE| replace:: AWS EC2 authentication guide
 .. _AWS_AUTH_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/ec2.html
 
+.. |REGISTRY_INTERNAL_SCRIPT| replace:: Internal Script Integration Guide
+.. _REGISTRY_INTERNAL_SCRIPT: https://guides.bcome.com/en/2.0.0/the-registry/internal-commands.html
+
 .. |BCOME_SOURCE| replace:: github source
 .. _BCOME_SOURCE: https://github.com/webzakimbo/bcome-kontrol
 

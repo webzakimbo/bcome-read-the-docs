@@ -50,6 +50,13 @@ See :doc:`../usage/executing-commands` for invoking commands and :doc:`../usage/
 
 If arguments have been provided, they are available as a Hash from an instance variable named ``@arguments``.
 
+.. note::
+
+   To integrate your internal script into your installation, you must add it to The Registry. See :doc:`../registry/overview` and :doc:`../registry/registry-examples`.
+
+   For a guide, see |REGISTRY_INTERNAL_SCRIPT|_.
+
+
 Invoking internal scripts from within another
 ---------------------------------------------
 
