@@ -13,12 +13,17 @@ copyright = u'2020 Webzakimbo Ltd.'
 
 author = u'Webzakimbo Ltd.'
 
-# The short X.Y version
-version = u''
-# The full version, including alpha/beta/rc tags
-release = u'2.0.0'
+version = u'2.0'        # CHANGE ME when release new version
+release = u'2.0.0'      # ditto & urls.rst NOT dynamic. Need updating in there too.
 
-#html_logo = 'img/temp-logo.png'
+html_favicon = '_static/images/favicon.png'
+html_logo = '_static/images/bcome-logo-docs.png'
+
+html_context = {
+  'fqdn': "https://docs.bcome.com",
+  'image_path': "_static/images",
+  'open_graph_logo': "bcome-logo-docs-og.png"
+}
 
 # -- General configuration ---------------------------------------------------
 
@@ -44,9 +49,6 @@ templates_path = ['_templates']
 html_css_files = [
   'css/override-default.css'
 ]
-
-html_favicon = '_static/images/favicon.png'
-html_logo = '_static/images/bcome-logo-docs.png'
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
