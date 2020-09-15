@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 body {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 200;
   color: #3E4E60;
 }
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5 {
 /* Release version, e.g. 'latest', or "1.1" etc */
 .wy-side-nav-search>div.version {
   color:  #fcfcfc;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Left-hand menu item captions */
