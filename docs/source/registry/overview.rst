@@ -25,5 +25,5 @@ For further information on Bcome's in-built commands see :doc:`../usage/executin
 
 .. hint::
 
-  Whilst providing convenience accessors for your orchestrative functions, adding Registry means is the means with which you can build up your installation into a self-documenting application tailored to your own requirements.
+  Whilst providing convenience accessors for your orchestrative functions, adding Registry methods is the means with which you build up your installation into a self-documenting application tailored to your own requirements.
 
