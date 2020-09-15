@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome usage: Pseudo-tty
+   :description lang=en: Bcome usage: Accessing remote pseudo terminals using pseudo_tty
 
 .. include:: ../urls.rst
 

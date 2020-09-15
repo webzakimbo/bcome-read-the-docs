@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome orchestration: the registry configuration file
+   :description lang=en: Bcome orchestration: Registry configuration file - registry.yml
 
 ***************************
 Registry Configuration File

@@ -1,6 +1,5 @@
 .. meta::
-   :description lang=en: Bcome orchestration: registry confuguration attributes 
-
+   :description lang=en: Bcome orchestration: Registry configuration attributes 
 
 *********************************
 Registry Configuration Attributes

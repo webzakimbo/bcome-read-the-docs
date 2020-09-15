@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: The Bcome network configuration file - element inheritance and overrides. networks.yml
+   :description lang=en: Inheriting and overriding attributes in your Bcome network configuration file. 
 
 .. include:: ../urls.rst
 

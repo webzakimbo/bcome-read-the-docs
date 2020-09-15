@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome command list menu list in-built in built commands
+   :description lang=en: The Bcome command menu
 
 .. include:: ../urls.rst
 

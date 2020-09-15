@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: The metadata framework
+   :description lang=en: The Metadata Framework.
 
 The Metadata Framework
 ======================

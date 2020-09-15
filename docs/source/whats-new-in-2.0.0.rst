@@ -1,7 +1,7 @@
 .. include:: urls.rst
 
 .. meta::
-   :description lang=en: What's new in Bcome 2.0.0
+   :description lang=en: What's new in Bcome 2.0.0?
 
 What's new in 2.0.0
 ====================

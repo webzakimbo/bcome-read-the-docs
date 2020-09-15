@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: The Bcome network configuration file - namespace attribute list within the networks.yml file.
+   :description lang=en: Bcome Network configuration file attributes.
 
 .. include:: ../urls.rst
 

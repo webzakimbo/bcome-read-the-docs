@@ -1,7 +1,7 @@
 .. include:: ../urls.rst
 
 .. meta::
-   :description lang=en: Preparing an AWS account authorization for Bcome.
+   :description lang=en: Adding an Amazon Web Services account authorization to your Bcome installation.
 
 ************************
 Adding AWS authorization

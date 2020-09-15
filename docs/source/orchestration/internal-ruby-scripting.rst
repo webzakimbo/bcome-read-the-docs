@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome orchestration: internal ruby scripting extending Bcome
+   :description lang=en: Bcome orchestration: Extending Bcome's runtime with 'internal' orchestration scripts.
 
 .. include:: ../urls.rst
 

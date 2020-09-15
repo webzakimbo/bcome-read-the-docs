@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome usage: ssh access to a server
+   :description lang=en: Bcome usage: Initiating an SSH terminal connection to a server.
 
 .. include:: ../urls.rst
 

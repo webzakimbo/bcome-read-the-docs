@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome usage: interactive mode
+   :description lang=en: Bcome usage: Real-time orchestration to multiple machines at once with Bcome's Interactive mode.
 
 .. include:: ../urls.rst
 

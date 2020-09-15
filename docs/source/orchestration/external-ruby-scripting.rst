@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome orchestration: external ruby scripting
+   :description lang=en: Bcome orchestration: How to write standalone - "external" - scripts, that make use of your Bcome installation. 
 
 .. include:: ../urls.rst
 

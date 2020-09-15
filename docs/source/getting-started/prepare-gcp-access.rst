@@ -1,7 +1,7 @@
 .. include:: ../urls.rst
 
 .. meta::
-   :description lang=en: Preparing a GCP account for Bcome: OAuth 2.0 or Service Account authorisation
+   :description lang=en: Adding a Google Cloud Platform (GCP) authorisation - OAuth 2.0 or a Service Account - to your Bcome installation.
 
 ************************
 Adding GCP authorization

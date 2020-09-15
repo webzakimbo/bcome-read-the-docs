@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome orchestration: Basic bash scripting in Bcome
+   :description lang=en: Bcome orchestration: Basic bash scripting in Bcome.
 
 .. include:: ../urls.rst
 

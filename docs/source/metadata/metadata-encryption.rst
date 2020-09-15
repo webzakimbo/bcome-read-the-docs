@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Metadata Encryption
+   :description lang=en: Bcome Metadata Framework encryption.
 
 Metadata Encryption
 ===================

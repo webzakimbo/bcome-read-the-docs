@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome usage: Tunneling local port forwarding
+   :description lang=en: Bcome usage: Local port forwarding with the tunnel command.
 
 .. include:: ../urls.rst
 

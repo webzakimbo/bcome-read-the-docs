@@ -1,7 +1,7 @@
 .. include:: ../urls.rst
 
 .. meta::
-   :description lang=en: Core Bcome concepts - your Estate
+   :description lang=en: An overview of the Estate concept within the Bcome framework.
 
 *******
 Estate

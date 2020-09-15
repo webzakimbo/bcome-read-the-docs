@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Monkey Patching bcome 
+   :description lang=en: Monkey Patching Bcome is easy 
 
 .. include:: ../urls.rst
 

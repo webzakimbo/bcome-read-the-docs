@@ -1,7 +1,7 @@
 .. include:: ../urls.rst
 
 .. meta::
-   :description lang=en: Core Bcome concepts - the network configuration file
+   :description lang=en: Your network configuration defines the architecture of your namespaces and SSH configuration.
 
 *********************
 Network Configuration

@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Metadata framework commands
+   :description lang=en: Bcome Metadata Framework commands.
 
 Metadata Commands
 =================

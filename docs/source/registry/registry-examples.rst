@@ -1,10 +1,10 @@
 .. meta::
-   :description lang=en: Bcome orchestration: registry examples
+   :description lang=en: Bcome orchestration: Registry method types
 
-Registry declaration types
-==========================
+Registry method types
+=====================
 
-There are three types of Registry declaration:
+There are three types of Registry methods:
 
 Shortcuts
 ---------
@@ -44,7 +44,7 @@ Below I declare a method hook to a custom orchestration class - ``SystemStatus``
 
 Any namespace with a breadcrumb matching the regular expression ``/gcp:(dev|prod):app_servers/`` would have the 'web_status' method hook available to it.
 
-See :doc:`../orchestration/internal-ruby-scripting` for more information on writing your internal scripts.
+See :doc:`../orchestration/internal-ruby-scripting` for information on how to write your internal scripts.
 
 .. note::
 

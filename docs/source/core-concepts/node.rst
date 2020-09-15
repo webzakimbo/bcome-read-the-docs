@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Core Bcome concepts - the @node namespace object
+   :description lang=en: The @node namespace object
 
 .. include:: ../urls.rst
 

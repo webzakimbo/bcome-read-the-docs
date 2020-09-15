@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Alternative Bcome network configurations using CONF= and ME=
+   :description lang=en: Alternative Bcome network configurations using CONF= and ME=.
 
 .. include:: ../urls.rst
 

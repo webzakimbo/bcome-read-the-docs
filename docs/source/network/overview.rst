@@ -1,5 +1,6 @@
 .. meta::
-   :description lang=en: The Bcome network configuration file - overview
+   :description lang=en: An overview of Bcome's network configuration file.
+
 .. include:: ../urls.rst
 
 ********

@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome static manifests on-site on-premise infrastructure hybrid cloud
+   :description lang=en: Using static manifests to configure on-site/on-premise infrastructure & enabling hybrid cloud with Bcome.
 
 ****************
 Static manifests

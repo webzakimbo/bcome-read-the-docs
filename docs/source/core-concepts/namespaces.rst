@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome Namespaces
+   :description lang=en: You Bcome installation's architecture will be determined directly by how you plan your namespaces.  Learn about the different namespace types here.
 
 .. include:: ../urls.rst
 

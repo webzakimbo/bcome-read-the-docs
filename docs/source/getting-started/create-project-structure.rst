@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome - create your project structure
+   :description lang=en: Create your Bcome project structure
 
 ***************
 Getting Started

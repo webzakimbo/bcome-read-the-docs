@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: Bcome usage: navigating the CLI and keyed access from the terminal.
+   :description lang=en: Bcome usage: Navigation using the Command Line Interface (CLI) or from your terminal using Keyed-Access.
 
 .. include:: ../urls.rst
 
