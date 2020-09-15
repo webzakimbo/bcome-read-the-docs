@@ -13,7 +13,7 @@ It's very quick to setup:
 
 It does a lot straight out the box:
 
-.. _github: https://github.com/webzakimbo/bcome-kontrol
+.. _github: https://github.com/webzakimbo/bcome
 
 .. raw:: html
 

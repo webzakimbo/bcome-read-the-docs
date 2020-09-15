@@ -18,7 +18,14 @@ version = u''
 # The full version, including alpha/beta/rc tags
 release = u'1.4.0'
 
-#html_logo = 'img/temp-logo.png'
+html_favicon = '_static/images/favicon.png'
+html_logo = '_static/images/bcome-logo-docs.png'
+
+html_context = {
+  'fqdn': "https://docs.bcome.com",
+  'image_path': "_static/images",
+  'open_graph_logo': "bcome-logo-docs-og.png"
+}
 
 # -- General configuration ---------------------------------------------------
 
@@ -40,10 +47,6 @@ autosectionlabel_prefix_document = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-
-html_favicon = 'images/favicon.png'
-html_favicon = '_static/images/favicon.png'
-html_logo = '_static/images/bcome-logo-docs.png'
 
 html_css_files = [
   'css/override-default.css'
