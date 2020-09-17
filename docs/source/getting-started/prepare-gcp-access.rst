@@ -53,7 +53,7 @@ To integrate OAuth 2.0 with Bcome, you'll need to create a client id and secret.
 
 .. note::
 
-  If you are prompted to create an OAuth consent screen, you will only need to do so with the minimal required settings of App Name, User Support Email, and Developer email address.
+  If you are prompted to create an OAuth consent screen, you will only need to do so with the minimal required settings of App Name, User Support Email, and Developer Email Address.
 
 Next, make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth directory create a file named .gauth/your-secrets-file.json and add the following contents:
 
