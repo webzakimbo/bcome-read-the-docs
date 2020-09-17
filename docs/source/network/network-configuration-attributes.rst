@@ -124,7 +124,7 @@ Google Cloud platform specific network attributes
 
 .. note::
 
-  Google Cloud Platform will require a minimum permission of ``compute.instances.list`` for OAuth 2.0 authorisations.  Ensure that any users attempting to authorize by OAuth 2.0 have been
+  Google Cloud Platform require a minimum permission of ``compute.instances.list`` for OAuth 2.0 authorisations.  Ensure that any users attempting to authorize by OAuth 2.0 have been
   configured with a role containing this permission.
 
 
