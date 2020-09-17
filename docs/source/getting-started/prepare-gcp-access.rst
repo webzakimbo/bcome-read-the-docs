@@ -30,6 +30,11 @@ If you've correctly setup your project directory structure (see: :doc:`create-pr
    └── bcome
        └── networks.yml
 
+.. warning::
+
+  Do not commit any files within your .gauth directory to source control.  Your OAuth 2.0 & ServiceAccount secrets will live here, as well as any access tokens returned from GCP when OAuth 2.0 is in use. 
+
+
 .. _O_AUTH_2_0:
 
 OAuth 2.0
@@ -50,7 +55,7 @@ To integrate OAuth 2.0 with Bcome, you'll need to create a client id and secret.
 
   If you are prompted to create an OAuth consent screen, you will only need to do so with the minimal required settings of App Name, User Support Email, and Developer email address.
 
-Next make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth directory create a file named .gauth/your-secrets-file.json and add the following contents:
+Next, make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth directory create a file named .gauth/your-secrets-file.json and add the following contents:
 
 .. code-block:: json
 
@@ -63,7 +68,7 @@ Next make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth 
      }
    }
 
-If you forgot to make a note of the Client Id and secret, then:
+If you forgot to make a note of the Client Id and Client Secret, then:
 
 * Login to you |GCP_CONSOLE|_
 * From your projects list select your project
@@ -82,7 +87,7 @@ Save this file to your .gauth directory as .gauth/your-secrets-file.json.  This 
 
 .. warning::
 
-   Don't commit your secrets file to source control!
+   Don't commit your secrets file to source control! 
 
 As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compute Engine API.  
 
