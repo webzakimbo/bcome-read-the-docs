@@ -97,7 +97,7 @@ Google Cloud platform specific network attributes
 |                             |                             |                                       |                                                                                |
 |   attribute key             |  description                | optional                              |   notes                                                                        |
 +=============================+=============================+=======================================+================================================================================+
-|  project                    | GCP project name            |  Required for 'gcp' provider type     |                                                                                |
+|  project                    | GCP project id              |  Required for 'gcp' provider type     | Be careful to set this to the project id, and not the project name.            |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |  zone                       | GCP zone                    |  Required for 'gcp' provider type     | For a full list of zones see: |GCP_ZONES|_.                                    |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
@@ -121,6 +121,12 @@ Google Cloud platform specific network attributes
 |			      | to be found within the      |			                    |										     |	
 |			      | .gauth directory.	    |					    |									             |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+	
+
+.. note::
+
+  Google Cloud Platform will require a minimum permission of ``compute.instances.list`` for OAuth 2.0 authorisations.  Ensure that any users attempting to authorize by OAuth 2.0 have been
+  configured with a role containing this permission.
+
 
 AWS specific network attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
