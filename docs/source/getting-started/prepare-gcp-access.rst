@@ -4,7 +4,7 @@
    :description lang=en: Adding a Google Cloud Platform (GCP) authorisation - OAuth 2.0 or a Service Account - to your Bcome installation.
 
 ************************
-Adding GCP authorization
+Adding GCP authorisation
 ************************
 
 GCP authorisation may be achieved either via :ref:`O_AUTH_2_0`, and/or by directly linking a :ref:`SERVICE_ACCOUNT`.
@@ -41,12 +41,16 @@ To integrate OAuth 2.0 with Bcome, you'll need to create a client id and secret.
 * From your projects list select your project (or create a new one)
 * Go to APIs & Services
 * Go to Credentials
-* Hit New Credentials, then select OAuth client id
-* Under ``Application Type`` select ``Other``
-* Under ``Name``, enter a name for your Bcome console installation.
+* Select Create Credentials, then select OAuth client id
+* Under ``Application Type`` select ``Desktop app`` (previously this was 'other')
+* Under ``Name``, enter a name for your Oauth client application.
 * Hit ``Create``
 
-Make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth directory create a file named .gauth/your-secrets-file.json and add the following contents:
+.. note::
+
+  If you are prompted to create an OAuth consent screen, you will only need to do so with the minimal required settings of App Name, User Support Email, and Developer email address.
+
+Next make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth directory create a file named .gauth/your-secrets-file.json and add the following contents:
 
 .. code-block:: json
 
@@ -59,15 +63,26 @@ Make a note of the ``Client Id`` and ``Client Secret`` then in your .gauth direc
      }
    }
 
+If you forgot to make a note of the Client Id and secret, then:
+
+* Login to you |GCP_CONSOLE|_
+* From your projects list select your project
+* Go to APIs & Services
+* Go to Credentials
+* Select your OAuth 2.0 Client application
+* Select ``Download JSON``
+
+Save this file to your .gauth directory as .gauth/your-secrets-file.json.  This file may differ slightly in structure to that suggested above, but it will be compatible.
+
 .. note::
 
-  Your .gauth/your-secrets-file.json can be called anything you like. You'll reference this file later on in your networks.yml configuration file.  
+  Your .gauth/your-secrets-file.json can be called anything you like. You'll reference this file later on when you add your authorisation to your network configuration.
 
-  Bcome supports multiple GCP accounts at the same time (either for different GCP accounts, or for different projects within the same account), and you would integrate these by adding a secrets file per GCP project to your .gauth directory.
+  Bcome supports multiple GCP authorisations at the same time (either for different GCP accounts, or for different projects within the same account), and you would integrate these by adding a secrets file per GCP project to your .gauth directory.
 
 .. warning::
 
-   Don't commit your secrets file to source control.
+   Don't commit your secrets file to source control!
 
 As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compute Engine API.  
 
@@ -80,7 +95,7 @@ As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compu
 Service Account
 ===============
 
-Service Account authorization requires credentials in JSON format.
+Service Account authorisation requires credentials in JSON format.
 
 * Follow this guide here in order to create your credentials: |GCP_SERVICE_ACCOUNT_CREDS_HOW_TO|_ 
 * Download the credentials file in JSON format and save it to your .gauth directory. Your file will look something like this:
@@ -105,9 +120,9 @@ Save your service account credentials json file to your .gauth directory under a
 
 .. note::
 
-   For demonstrations of GCP authorization in use, please see our guides:  |GCP_OAUTH_GUIDE|_ / |GCP_AUTH_SA_GUIDE|_.
+   For demonstrations of GCP authorisation in use, please see our guides:  |GCP_OAUTH_GUIDE|_ / |GCP_AUTH_SA_GUIDE|_.
 
 .. hint::
 
-   To add your GCP authorization to your network configuration, see :doc:`../core-concepts/network-configuration`.
+   To add your GCP authorisation to your network configuration, see :doc:`../core-concepts/network-configuration`.
 
