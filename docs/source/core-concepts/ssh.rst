@@ -9,7 +9,7 @@ SSH
 
 SSH is core to the Bcome framework as all interactions with servers are conducted over SSH.
 
-This is either in the form of programmatic interactions when Bcome is used for orchestration, where Bcome will interrogate your local ssh-agent for your configured keys, or where the framework delegates to your local Operating System in order to initiate SSH terminal sessions.
+This is either in the form of programmatic interactions when Bcome is used for orchestration, where Bcome will interrogate your local ssh-agent for your configured keys, or where the framework delegates to your local operating system in order to initiate SSH terminal sessions.
 
 It is HIGHLY recommended that you have SSH keys setup on the machines with which you wish to interact and a running ssh-agent.
 
