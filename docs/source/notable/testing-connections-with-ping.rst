@@ -87,4 +87,4 @@ Ping from the Bcome Console
 
 .. note::
 
-   Unlike all other types of Ssh connection,  the result of a Ping command will not be cached within Bcome.
+   Bcome caches all SSH connections, with the exception of those made during a Ping.

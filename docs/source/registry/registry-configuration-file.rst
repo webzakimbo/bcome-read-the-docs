@@ -65,3 +65,5 @@ Your regular expression could look as follows:
 
    The root namespace name ('estate' in the example above) is always implicit in registry declarations.
 
+For information & examples on configuring scripts, see :doc:`registry-examples`.  Our |GUIDES|_ also have example configurations.
+
