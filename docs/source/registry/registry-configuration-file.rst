@@ -1,3 +1,5 @@
+.. include:: ../urls.rst
+
 .. meta::
    :description lang=en: Bcome orchestration: Registry configuration file - registry.yml
 
