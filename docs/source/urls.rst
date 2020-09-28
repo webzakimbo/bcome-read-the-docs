@@ -11,6 +11,9 @@
 .. |GCP_AUTH_SA_GUIDE| replace:: GCP Service Account authentication guide
 .. _GCP_AUTH_SA_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/gcp-service-account.html
 
+.. |SSH_SETTINGS_ATTRS| replace:: SSH Settings Attributes
+.. _SSH_SETTINGS_ATTRS: https://docs.bcome.com/en/2.0.0/network/network-configuration-attributes.html#ssh-settings-attributes
+
 .. |GCP_OAUTH_GUIDE| replace:: GCP OAuth 2.0 authentication guide
 .. _GCP_OAUTH_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/gcp-oauth.html
 

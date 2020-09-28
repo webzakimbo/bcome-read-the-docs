@@ -28,9 +28,9 @@ Configure your cloud authorizations
 
 To populate your installation with servers from a cloud provider you will need to add an authorization.  
 
-An authorization may be associated with more than one namespace, whilst you may add as many authorizations as you like to your installation.  
+An authorization may be associated with more than one namespace, whilst you may add as many different authorizations as you like to your installation.  
 
-When you interact with a Bcome namespace configured for an authorisation, the framework will authenticate you against the cloud provider in question so that it may perform a List (and Filter) action to retrieve a server list, which it will then use to populate your Inventory.
+When you interact with a Bcome namespace configured for an authorisation, the framework will authenticate you against the cloud provider in question so that it may retrieve a server list, which it will then use to populate your Inventory.
 
 To add an AWS authorization. See: :doc:`prepare-aws-access`.
 
@@ -41,8 +41,8 @@ To add a GCP authorization. See: :doc:`prepare-gcp-access`.
    When manually specifying servers you will not need to create an authorisation. See :doc:`../network/static-manifests` for further information.
 
 
-Add you authorisation to your namespaces
-========================================
+Add your cloud authorisation to your namespaces
+===============================================
 
 Having added cloud authorisations you will likely want to configure them within your namespaces. This is done by adding to your networks.yml configuration file.
 
