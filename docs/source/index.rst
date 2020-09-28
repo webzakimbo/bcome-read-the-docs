@@ -8,6 +8,7 @@
 
     getting-started/requirements
     getting-started/create-project-structure
+    getting-started/setting-up-your-project
     getting-started/prepare-aws-access
     getting-started/prepare-gcp-access
 

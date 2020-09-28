@@ -7,54 +7,12 @@
 Getting Started
 ***************
 
-Create your project structure
-=============================
+Setting up your project
+=======================
 
-Create a project directory:
+You will need to install and initialize Bcome.  
 
-.. code-block:: bash
-
-   mkdir project
-   cd project
-   
-Install the bcome gem, manually:
-
-.. code-block:: bash
-
-   gem install bcome
-
-Or, via a Gemfile:
-
-.. code-block:: bash
-
-   source 'https://rubygems.org'
-   gem 'bcome'
-
-Which you can then install via bundle:
-
-.. code-block:: bash
-
-   bundle install
-
-Now run the initializer to create your configuration files & directories:
-
-.. code-block:: bash
-
-  init-bcome
-
-Your project directory should now look as follows:
-
-.. code-block:: bash
-
-  .
-  ├── .aws
-  ├── .gauth
-  ├── Gemfile
-  └── bcome
-      ├── metadata
-      ├── networks.yml
-      ├── orchestration
-      └── registry.yml
+See here for how: :doc:`setting-up-your-project`
 
 
 Define your namespaces
