@@ -3,9 +3,9 @@ Bcome documentation
 *******************
 
 .. meta::
-   :description lang=en: Welcome to the Bcome documentation - all you need to configure Bcome to create your own DevOps application.
+   :description lang=en: Welcome to the Bcome documentation - all you need to configure Bcome to create your own DevOps Console.
 
-Welcome to the Bcome documentation.  All you need to configure Bcome to create your own DevOps application.
+Welcome to the Bcome documentation.  All you need to configure Bcome to create your own DevOps Console.
 
 For functionality demonstrations, please see the |GUIDES|_.
 
