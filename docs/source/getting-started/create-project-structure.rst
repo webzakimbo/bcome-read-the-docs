@@ -80,7 +80,7 @@ To add a GCP authorization. See: :doc:`prepare-gcp-access`.
 
 .. note::
 
-   When manually specifying servers you will not need to create an authorisation. See doc:`../network/static-manifests` for further information.
+   When manually specifying servers you will not need to create an authorisation. See :doc:`../network/static-manifests` for further information.
 
 
 Add you authorisation to your namespaces
