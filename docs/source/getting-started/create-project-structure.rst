@@ -102,7 +102,7 @@ If your server instances are not directly accessible you will need to configure 
 
 This is done by adding to your networks.yml configuration file.
 
-For configuration details, please refer to the |SSH_SETTINGS_ATTRS|_ documentation.  The |GUIDES|_ also have example configuration.
+For configuration details, please refer to the |SSH_SETTINGS_ATTRS|_ documentation.  Our |GUIDES|_ site also has example configuration.
 
 
 The Registry & Orchestration
@@ -112,5 +112,5 @@ The in-built Registry framework is what makes Bcome your DevOps Console.
 
 It will allow you to associate and re-use custom tasks - i.e. custom orchestration - with your namespaces.
 
-See :doc:`../registry/overview` and :doc:`../registry/registry-examples` for more information. The |GUIDES|_ also have example configuration.
+See :doc:`../registry/overview` and :doc:`../registry/registry-examples` for more information. Our |GUIDES|_ site also has example configuration.
 
