@@ -34,27 +34,25 @@ Which you can then install via bundle:
 
    bundle install
 
-Now create a directory for your configuration:
+Now run the initializer to create your configuration files & directories:
 
 .. code-block:: bash
 
-   mkdir bcome
-
-And within your configuration directory prep the yaml file within which your network configuration will live:
-
-.. code-block:: bash
-
-   cd bcome
-   touch networks.yml
+  init-bcome
 
 Your project directory should now look as follows:
 
 .. code-block:: bash
 
-   .
-   ├── Gemfile
-   └── bcome
-       └── networks.yml
+  .
+  ├── .aws
+  ├── .gauth
+  ├── Gemfile
+  └── bcome
+      ├── metadata
+      ├── networks.yml
+      ├── orchestration
+      └── registry.yml
 
 
 Populate your networks.yml configuration
