@@ -3,9 +3,9 @@ Bcome documentation
 *******************
 
 .. meta::
-   :description lang=en: Welcome to the Bcome documentation - all you need to configure Bcome to create your own DevOps Console.
+   :description lang=en: Welcome to the Bcome documentation - all you need to configure Bcome to create your DevOps Control Panel
 
-Welcome to the Bcome documentation.  All you need to configure Bcome to create your own DevOps Console.
+Welcome to the Bcome documentation.  All you need to configure Bcome to create your DevOps Control Panel.
 
 For functionality demonstrations, please see the |GUIDES|_.
 

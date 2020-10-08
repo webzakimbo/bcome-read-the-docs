@@ -36,7 +36,7 @@ Now run the initializer to create your configuration files & directories:
 
 .. code-block:: bash
 
-  init-bcome
+   bcome init 
 
 Your project directory should now look as follows:
 
