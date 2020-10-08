@@ -1,5 +1,5 @@
 *******************
-Bcome documentation
+Bcome Documentation
 *******************
 
 .. meta::
