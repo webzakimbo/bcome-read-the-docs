@@ -11,7 +11,7 @@ Requirements
 
 - SSH keys configured on your target machines
 
-- A running ssh-agent on your client machine with all relevant ssh keys added.
+- A running ssh-agent on your client machine with all relevant ssh keys added. For programmatic access Bcome references your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
 
 - Servers to connect to !
 
