@@ -38,6 +38,16 @@ Multi-hop SSH proxying
 
 Configure chains of SSH proxies, allowing for transparent multi-hop setups.
 
+SSH Key handling
+----------------
+
+Pre 2.0.0, Bcome implicitly utilised ssh keys in the client's ssh-agent for ssh'ing into (i.e. getting a terminal onto) a node, whilst programmatic access relied on the paths to SSH keys being expressly added to configuration.
+
+In 2.0.0 you no longer need to specify ssh key paths for programmatic access.
+
+All you need to do now is ensure that you have your ssh-agent running, and all keys in play added to your agent.  Bcome will then reference your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
+
+
 Metadata
 --------
 
