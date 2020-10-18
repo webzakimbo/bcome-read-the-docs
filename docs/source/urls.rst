@@ -24,7 +24,7 @@
 .. _REGISTRY_INTERNAL_SCRIPT: https://guides.bcome.com/en/2.0.0/the-registry/internal-commands.html
 
 .. |BCOME_SOURCE| replace:: github source
-.. _BCOME_SOURCE: https://github.com/webzakimbo/bcome-kontrol
+.. _BCOME_SOURCE: https://github.com/webzakimbo/bcome
 
 .. |GCP_CONSOLE| replace:: GCP web console
 .. _GCP_CONSOLE: https://console.cloud.google.com/

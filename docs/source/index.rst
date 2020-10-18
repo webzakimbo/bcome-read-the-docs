@@ -95,6 +95,6 @@
 
     About <https://bcome.com>
     Guides <https://guides.bcome.com> 
-    Source Code <https://github.com/webzakimbo/bcome-kontrol>
+    Source Code <https://github.com/webzakimbo/bcome>
     Ruby Gem <https://rubygems.org/gems/bcome>
     Ruby Doc <https://www.rubydoc.info/gems/bcome/2.0.0>
