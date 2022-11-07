@@ -7,14 +7,14 @@
 Estate
 *******
 
-The sum-total of all your defined Bcome namespaces is referred to as your ``Estate``.
+The sum-total of all your defined Bcome :doc:`nodes` is referred to as your ``Estate``.
 
 You may construct your estate as follows:
 
 Single network
 --------------
 
-A single network from a given cloud provider e.g. a Production environment in AWS.
+A single network from a given cloud provider e.g. a Production environment in AWS or GCP.
 
 This is the most basic setup.
 

@@ -1,5 +1,5 @@
 .. meta::
-   :description lang=en: The @node namespace object
+   :description lang=en: The @node object
 
 .. include:: ../urls.rst
 
@@ -7,15 +7,15 @@
 @node
 *****
 
-``@node`` is an instance of a namespace (see: :doc:`../core-concepts/namespaces`). 
+``@node`` is an instance of a node (see: :doc:`../core-concepts/node`). 
 
 * Whenever you’re in a Console session, you are in the scope of an instance of @node.
 
-* When you use Keyed Access to key into a namespace, the last namespace key will reference an instance of @node.
+* When you use Keyed Access to key into a node the last node key will reference an instance of @node, e.g. if you key into foo:bar, @node will encapsulate node 'bar'.
 
 * An instance of @node is made available to you within your orchestration scripts.
 
-@node is the Ruby object that encapsulates the current namespace. 
+@node is the Ruby object that encapsulates the current node. 
 
 .. note::
 
