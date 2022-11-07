@@ -170,7 +170,7 @@ A GKE Kubernetes Cluster, hosted in Google Cloud Platform.
 .. code-block:: yaml
 
    ---
-   foo:bar:production-cluster:
+   "foo:bar:production-cluster":
      type: gcp-k8s-cluster
      description: My production cluster
      cluster:
@@ -188,7 +188,7 @@ An EKS Kubernetes cluster hosted in Amazon Web Services.
 .. code-block:: yaml
 
    ---
-   foo:bar:production-cluster:
+   "foo:bar:production-cluster":
      type: aws-k8s-cluster
      description: My production cluster
      cluster:
