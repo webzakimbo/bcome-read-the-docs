@@ -11,7 +11,6 @@ Your installation's architecture will be determined directly by how you lay out 
 
 The sum-total of all your nodes is referred to within Bcome as your :doc:`../core-concepts/estate`.
 
-
 Nodes are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
 
 .. code-block:: yaml
@@ -198,25 +197,24 @@ An EKS Kubernetes cluster hosted in Amazon Web Services.
    
 .. note::
 
-   EKS and GKE clusters are dynamic node types.  Whilst they can be placed inside any other ``collection`` nothing can be placed beneath them as their contents are auto-populated.
+   Inventories, EKS and GKE clusters are dynamic node types.  Whilst they can be placed inside any other ``collection`` nothing can be placed beneath them as their contents are auto-populated.
 
-Dynamic Node Types
-===================
+System Node Types
+=================
 
-Dynamic nodes are auto-populated into Declared node types:
+System node types are automatically populated into specific declared node types: 
 
 Server
 ^^^^^^
 
-A Server directly represents a server from a Cloud provider, or one from a the statically defined manifest.
+A Server directly represents a server from a cloud provider (determined by your network configuration, see: :doc:`network-configuration-attributes`) , or one from a statically defined manifest (see :doc:`static-manifests`).
 
-Servers may also loaded in from :doc:`static-manifests`, or otherwise they are populated from your network configuration (see: :doc:`network-configuration-attributes`).
-
+Servers are used to populate Inventories.
 
 Kubernetes Node Types
 ^^^^^^^^^^^^^^^^^^^^^
 
-Bcome models many common Kubernetes types as Bcome nodes:
+Many common Kubernetes types are modelled as Bcome nodes:
 
 - Namespace
 - Ingress
@@ -231,7 +229,7 @@ and some uncommon ones:
 
 - Istio VirtualService
 
-and returns a generic Bcome node - a Crd, or Custom Resource Definition - for any ad-hoc objects returned that do not have an explicit Bcome Kubernetes node type to assign it.
+A abstract Bcome node type -  a Crd, or Custom Resource Definition - is returned for any ad-hoc objects returned that do not have an explicit Bcome Kubernetes node type to assign it.
 
-As for all Bcome nodes, any Kubernetes node type is provided with convenience accessoors and is extensible within the framework for custom orchestration tasks.
+As for all Bcome nodes, all Kubernetes node types are provided with convenience accessors and are extensible within the framework for custom orchestration tasks.
 
