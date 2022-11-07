@@ -11,9 +11,7 @@ Requirements
 
 - SSH keys configured on your target machines.
 
-- If you're wanting to use the tool to interact with servers overs ssh, then you'll need a running ssh-agent on your client machine with all relevant ssh keys added. For programmatic access Bcome references your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
-
-- Servers to connect to !
+- To interact with machines over SSH you'll need a running ssh-agent on your client (where Bcome is installed) with all relevant ssh keys added.  For programmatic access, Bcome makes use of your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
 
 .. include:: ssh-version-requirement-note.rst
 
