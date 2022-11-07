@@ -9,7 +9,7 @@ Welcome to the Bcome Documentation.  All you need to configure Bcome to create y
 
 For functionality demonstrations, please see the |GUIDES|_.
 
-:doc:`whats-new-in-2.0.0`
+:doc:`whats-new-in-3.0.0`
 
-:doc:`breaking-changes-in-2.0.0`
+:doc:`breaking-changes-in-3.0.0`
 
