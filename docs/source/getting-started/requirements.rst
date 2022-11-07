@@ -16,3 +16,5 @@ Requirements
 - Servers to connect to !
 
 .. include:: ssh-version-requirement-note.rst
+
+.. include:: m1-mac-requirements.rst
