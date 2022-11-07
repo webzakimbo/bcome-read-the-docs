@@ -11,6 +11,7 @@ Your installation's architecture will be determined directly by how you lay out 
 
 The sum-total of all your nodes is referred to within Bcome as your :doc:`../core-concepts/estate`.
 
+
 Nodes are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
 
 .. code-block:: yaml
@@ -39,11 +40,13 @@ Nodes are laid out in a parent - child format, for example:
 
 .. note::
 
-   Nodes can be of type: ``collection``, ``inventory``, ``inventory-subselect``, ``inventory-merge``, ``aws-k8s-cluster``, or ``gcp-k8s-cluster``
+   Declared nodes can be of type: ``collection``, ``inventory``, ``inventory-subselect``, ``inventory-merge``, ``aws-k8s-cluster``, or ``gcp-k8s-cluster``
 
 
-Node Types
-==========
+Declared Node Types
+===================
+
+The following nodes type can be declared directly in the network config:
 
 Collection
 ^^^^^^^^^^
@@ -160,13 +163,6 @@ It requires contributing Inventories and/or contributing Sub-Selected-inventorie
 
    A Merged Inventory may have contributors from the same or different networks within the same Cloud, different Clouds, or from statically declared manifests.
 
-Server
-^^^^^^
-
-A Server directly represents a server from a Cloud provider, or one from a the statically defined manifest. 
-
-With the exception of :doc:`static-manifests`, servers are not declared, rather they are populated into Inventories from by your Network configuration (see: :doc:`network-configuration-attributes`).
-
 GKE Cluster
 ^^^^^^^^^^^
 
@@ -203,4 +199,39 @@ An EKS Kubernetes cluster hosted in Amazon Web Services.
 .. note::
 
    EKS and GKE clusters are dynamic node types.  Whilst they can be placed inside any other ``collection`` nothing can be placed beneath them as their contents are auto-populated.
+
+Dynamic Node Types
+===================
+
+Dynamic nodes are auto-populated into Declared node types:
+
+Server
+^^^^^^
+
+A Server directly represents a server from a Cloud provider, or one from a the statically defined manifest.
+
+Servers may also loaded in from :doc:`static-manifests`, or otherwise they are populated from your network configuration (see: :doc:`network-configuration-attributes`).
+
+
+Kubernetes Node Types
+^^^^^^^^^^^^^^^^^^^^^
+
+Bcome models many common Kubernetes types as Bcome nodes:
+
+- Namespace
+- Ingress
+- Service
+- Deployment
+- Pod
+- Container
+- Secret
+- Cron Job
+
+and some uncommon ones:
+
+- Istio VirtualService
+
+and returns a generic Bcome node - a Crd, or Custom Resource Definition - for any ad-hoc objects returned that do not have an explicit Bcome Kubernetes node type to assign it.
+
+As for all Bcome nodes, any Kubernetes node type is provided with convenience accessoors and is extensible within the framework for custom orchestration tasks.
 
