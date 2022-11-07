@@ -166,3 +166,41 @@ Server
 A Server directly represents a server from a Cloud provider, or one from a the statically defined manifest. 
 
 With the exception of :doc:`static-manifests`, servers are not declared, rather they are populated into Inventories from by your Network configuration (see: :doc:`network-configuration-attributes`).
+
+GKE Cluster
+^^^^^^^^^^^
+
+A GKE Kubernetes Cluster, hosted in Google Cloud Platform.
+
+.. code-block:: yaml
+
+   ---
+   foo:bar:production-cluster:
+     type: gcp-k8s-cluster
+     description: My production cluster
+     cluster:
+       location: gcp-location 
+       name: cluster-name
+     network:
+       override: attribute
+       override: another
+
+AWS Cluster
+^^^^^^^^^^^
+
+An EKS Kubernetes cluster hosted in Amazon Web Services.
+
+.. code-block:: yaml
+
+   ---
+   foo:bar:production-cluster:
+     type: aws-k8s-cluster
+     description: My production cluster
+     cluster:
+       name: CLUSTER_NAME
+       account_id: AWS_ACCOUNT_ID # needed to infer the cluster's arn
+   
+.. note::
+
+   EKS and GKE clusters are dynamic node types.  Whilst they can be placed inside any other ``collection`` nothing can be placed beneath them as their contents are auto-populated.
+
