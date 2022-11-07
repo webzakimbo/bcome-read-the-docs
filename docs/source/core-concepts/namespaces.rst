@@ -1,26 +1,26 @@
 .. meta::
-   :description lang=en: You Bcome installation's architecture will be determined directly by how you plan your namespaces.  Learn about the different namespace types here.
+   :description lang=en: Your Bcome installation's architecture will be determined directly by how you lay out your nodes.  Learn about the different node types here.
 
 .. include:: ../urls.rst
 
-**********
-Namespaces
-**********
+*****
+Nodes
+*****
 
-Your installation's architecture will be determined directly by how you lay out your namespaces, which should be a direct representation of how you wish to visualize and manage your platforms, environments, applications etc.
+Your installation's architecture will be determined directly by how you lay out your nodes, which should be a direct representation of how you wish to visualize and manage your platforms, environments, applications etc.
 
-The sum-total of all your namespaces is referred to within Bcome as your :doc:`../core-concepts/estate`.
+The sum-total of all your nodes is referred to within Bcome as your :doc:`../core-concepts/estate`.
 
-Namespaces are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
+Nodes are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
 
 .. code-block:: yaml
 
   ---
-  namespace_key:
-    description: "A description of your namespace"
-    type:  the namespace type
+  node_key:
+    description: A description of your node
+    type:  the node type
 
-Namespaces are laid out in a parent - child format, for example:
+Nodes are laid out in a parent - child format, for example:
 
 .. code-block:: yaml
 
@@ -39,11 +39,11 @@ Namespaces are laid out in a parent - child format, for example:
 
 .. note::
 
-   Namespaces can be of type: ``collection``, ``inventory``, ``inventory-subselect`` or ``inventory-merge``
+   Nodes can be of type: ``collection``, ``inventory``, ``inventory-subselect``, ``inventory-merge``, ``aws-k8s-cluster``, or ``gcp-k8s-cluster``
 
 
-Namespace Types
-===============
+Node Types
+==========
 
 Collection
 ^^^^^^^^^^
@@ -59,7 +59,7 @@ Collections may contain any number of other collections and any number of invent
 
 .. note::
 
-   Your installation must have at least one, and only one ``root`` collection. All other namespaces are located below the root.  This collection references your Estate, as it contains within it all other namespaces.
+   Your installation must have at least one, and only one ``root`` collection. All other nodes are located below the root.  This collection references your Estate, as it contains within it all other nodes.
 
 Inventory
 ^^^^^^^^^
