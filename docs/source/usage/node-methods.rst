@@ -13,7 +13,7 @@ These are useful for debugging in Console sessions and for enhancing your orches
 
 Notable accessors are detailed below:
 
-On all namespaces
+On all nodes
 =================
 
 Networking accessors
@@ -31,7 +31,7 @@ Its configuration, as a Hash:
 
    network_driver.config
 
-The authenticated Cloud credentials for the current namespace, returned as a Hash. For EC2 this will return the namespace's access key and secret key, for GCP it will return an access_token and the project name. This is useful should you wish to extend an authenticated Bcome session into a custom integration.
+The authenticated Cloud credentials for the current node, returned as a Hash. For EC2 this will return the node's access key and secret key, for GCP it will return an access_token and the project name. This is useful should you wish to extend an authenticated Bcome session into a custom integration.
 
 .. code-block:: bash
 
@@ -43,7 +43,7 @@ The SSH driver, an instance of ``::Bcome::Ssh::Driver``
 
    ssh_driver
 
-The ``Net::SSH::Proxy::Jump`` configuration, should the namespace be configured to proxy its connections:
+The ``Net::SSH::Proxy::Jump`` configuration, should the node be configured to proxy its connections:
 
 .. code-block:: bash
 
@@ -52,7 +52,7 @@ The ``Net::SSH::Proxy::Jump`` configuration, should the namespace be configured 
 Server accessors
 ----------------
 
-All servers present within the current namespace:
+All servers present within the current node:
 
 .. code-block:: bash
 
@@ -61,19 +61,19 @@ All servers present within the current namespace:
 Metadata accessors
 ------------------
 
-The metadata object for this namespace (``::Bcome::Node::Meta::Local``):
+The metadata object for this node (``::Bcome::Node::Meta::Local``):
 
 .. code-block:: bash
 
   metadata
 
-All metadata for this namespace as a Hash
+All metadata for this node as a Hash
 
 .. code-block:: bash
 
   metadata.all
 
-On server namespaces
+On server nodes
 =====================
 
 The cloud server if @node is an EC2 server (returns an instance of Fog::Compute::AWS::Server):

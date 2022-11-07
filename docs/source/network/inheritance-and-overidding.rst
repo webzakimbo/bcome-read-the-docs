@@ -7,7 +7,7 @@
 Inheritance & overrides
 ***********************
 
-Network and Ssh Configuration (see :doc:`network-configuration-attributes`) are inherited by all of a namespace's children, at which point they may be overidden to customise the attributes at that namespace level. 
+Network and Ssh Configuration (see :doc:`network-configuration-attributes`) are inherited by all of a node's children, at which point they may be overidden to customise the attributes at odee level. 
 
 For example:
 

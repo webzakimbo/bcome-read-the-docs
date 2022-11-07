@@ -13,12 +13,12 @@ Silence command output:
 
    ::Bcome::Orchestrator.instance.silence_command_output!
 
-Initiate an SSH connection to all server instances within a given namespace (rather than lazy-load them):
+Initiate an SSH connection to all server instances within a given node (rather than lazy-load them):
 
 .. code-block:: bash
 
    # with a progress bar
-   ::Bcome::Ssh::Connector.connect(namespace, show_progress: true)
+   ::Bcome::Ssh::Connector.connect(@node, show_progress: true)
 
    # without a progress bar
-   ::Bcome::Ssh::Connector.connect(namespace, show_progress: false)
+   ::Bcome::Ssh::Connector.connect(@node, show_progress: false)

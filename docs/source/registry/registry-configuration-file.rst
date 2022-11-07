@@ -17,7 +17,7 @@ The Registry is configured with a configuration file named 'registry.yml', that 
            └── registry.yml
 
 
-The YAML configuration is a simple Hash structure representing an Array of script declarations, each one keyed on a Regular expression intended to match a specific Bcome namespace breadcrumb pattern.
+The YAML configuration is a simple Hash structure representing an Array of script declarations, each one keyed on a Regular expression intended to match a specific Bcome node breadcrumb pattern.
 
 .. code-block:: yaml
 
@@ -34,9 +34,9 @@ The YAML configuration is a simple Hash structure representing an Array of scrip
       - of
       - scripts
 
-Within Bcome, any namespace with a breadcrumb pattern matching a given Registry declaration's regular expression, will have that script available to it.
+Within Bcome, any node with a breadcrumb pattern matching a given Registry declaration's regular expression, will have that script available to it.
 
-Let's imagine you had the following namespace structure:
+Let's imagine you had the following node structure:
 
 .. code-block:: bash
 
@@ -65,7 +65,7 @@ Your regular expression could look as follows:
 
 .. note::
 
-   The root namespace name ('estate' in the example above) is always implicit in registry declarations.
+   The root node name ('estate' in the example above) is always implicit in registry declarations.
 
 For information & examples on configuring scripts, see :doc:`registry-examples`.  Our |GUIDES|_ site also has example configurations.
 

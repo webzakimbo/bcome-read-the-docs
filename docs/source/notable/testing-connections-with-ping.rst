@@ -25,7 +25,7 @@ The returned status will look like this:
          :timeout => 1,
          :proxy   => [
            [0] {
-             :host_lookup => "by_bcome_namespace",
+             :host_lookup => "by_bcome_node",
              :namespace   => "your_inventory:a_jump_host",
              :proxy_host  => "12.345.678.90",
              :user        => "guillaume"
@@ -38,12 +38,12 @@ The returned status will look like this:
 
 .. note::
 
-   Failed connections will be coloured red, and successful ones green.  Each is marked with a connection status of "failed" or "success" respectively.
+   Failed connections will be coloured red, successful green.  Each is marked with a connection status of "failed" or "success" respectively.
 
 Usage
 -----
 
-Let's imagine you have :doc:`../core-concepts/namespaces` laid out in the following parent-child relationship:
+Let's imagine you have :doc:`../core-concepts/nodes` laid out in the following parent-child relationship:
 
 .. code-block:: bash
 

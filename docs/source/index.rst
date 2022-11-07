@@ -19,7 +19,7 @@
 
     core-concepts/estate
     core-concepts/network-configuration
-    core-concepts/namespaces
+    core-concepts/nodes
     core-concepts/node
     core-concepts/ssh
 

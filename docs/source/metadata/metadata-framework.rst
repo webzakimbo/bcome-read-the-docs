@@ -24,9 +24,9 @@ To enable metadata you'll need a 'metadata' directory under your 'bcome' configu
 
 Any .yml file you place in this directory will be loaded into the framework.
 
-Your Metadata is then defined by declaring attributes onto a namespace breadcrumb.
+Your Metadata is then defined by declaring attributes onto a node breadcrumb.
 
-For example, given a namespace with a breadcrumb of "foo:bar", to assign it Metadata, you would create a .yml file within your 'metadata' directory with the following contents:
+For example, given a node with a breadcrumb of "foo:bar", to assign it Metadata, you would create a .yml file within your 'metadata' directory with the following contents:
 
 .. code-block:: yaml
 
@@ -38,9 +38,9 @@ For example, given a namespace with a breadcrumb of "foo:bar", to assign it Meta
 Metadata Inheritance
 --------------------
 
-Metadata is inherited within child namespaces, where it may be overidden.
+Metadata is inherited within child nodes, where it may be overidden.
 
-For example, given two namespace "parent" and "parent:child", with the following Metadata YAML defined:
+For example, given two node "parent" and "parent:child", with the following Metadata YAML defined:
 
 .. code-block:: yaml
 
@@ -53,7 +53,7 @@ For example, given two namespace "parent" and "parent:child", with the following
      key: overidden_value
 
 
-The "parent:child" namespace overrides, i.e. re-defines, the 'key' attribute, whilst inheriting 'other_key'.  Its Metadata looks like this:
+The "parent:child" node overrides, i.e. re-defines, the 'key' attribute, whilst inheriting 'other_key'.  Its Metadata looks like this:
 
 .. code-block:: yaml
 

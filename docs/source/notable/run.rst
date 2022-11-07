@@ -9,7 +9,7 @@ Run
 
 The 'run' command allows you to execute commands on your servers over SSH. You can target either individual, or groups of servers (where you execute the same command on multiple machines in parallel).
 
-Run may be invoked with the ``run`` command on any namespace. See :doc:`../usage/executing-commands`.
+Run may be invoked with the ``run`` command on any node. See :doc:`../usage/executing-commands`.
 
 .. note::
 

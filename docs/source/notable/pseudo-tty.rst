@@ -7,7 +7,7 @@
 Pseudo-tty
 **********
 
-Bcome's pseudo-tty mode allows you to access a pseudo terminal from any server namespaces.
+Bcome's pseudo-tty mode allows you to access a pseudo terminal from any server nodes.
 
 As Bcome handles your SSH configuration for you via your :doc:`../core-concepts/network-configuration`, setting up a pseudo-tty session becomes simple. 
 
@@ -29,7 +29,7 @@ You wish to tail a remote log file, and you usually SSH in to your server and ty
 
    tail -f /path/to/your/file.log
 
-Given a server namespace named app1 within a collection namespace of production, you would instead:
+Given a server node named app1 within a collection node of production, you would instead:
 
 .. code-block:: bash
 
@@ -44,7 +44,7 @@ You wish to open up a mysql console, and you’d usually SSH in to your server a
 
    mysql -u user -p password -h hostname database
 
-Given a server namespace named app1 within a collection namespace of production, you would instead:
+Given a server node named app1 within a collection node of production, you would instead:
 
 .. code-block:: bash
 
@@ -57,7 +57,7 @@ The pseudo_tty function is also accessible directly from the Console.
 
 .. code-block:: bash
 
-   bcome namespace
+   bcome node
    cd server
    pseudo_tty "your command"
 

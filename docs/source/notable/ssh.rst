@@ -9,7 +9,7 @@ SSH to a server
 
 You may SSH to a server either using Keyed-Access, or directly from the Bcome console (see: :doc:`../usage/navigation`).
 
-Let's imagine you have :doc:`../core-concepts/namespaces` laid out in the following parent-child relationship:
+Let's imagine you have :doc:`../core-concepts/nodes` laid out in the following parent-child relationship:
 
 .. code-block:: bash
 
@@ -28,7 +28,7 @@ SSH with Keyed Access
 From the Console
 ^^^^^^^^^^^^^^^^
 
-From the child Inventory namespace:
+From the child inventory node:
 
 .. code-block:: bash
 
@@ -36,7 +36,7 @@ From the child Inventory namespace:
    ssh server
 
 
-From the server namespace:
+From the server node:
 
 .. code-block:: bash
 
@@ -47,4 +47,4 @@ From the server namespace:
 
 .. hint::
 
-  Use the 'tree' function or invoke 'ls' on any namespace to see which namespaces are available. See: :doc:`../usage/command-menu`.
+  Use the 'tree' function or invoke 'ls' on any node to see which child nodes are available beneath it. See: :doc:`../usage/command-menu`.

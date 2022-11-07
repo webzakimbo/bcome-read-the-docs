@@ -11,7 +11,7 @@ When interacting with machines over SSH Bcome will attempt to connect to all mac
 
 It will also cache the connections until the Bcome session has terminated.
 
-This can be problemmatic for some jump hosts with default configuration, that may not be setup to handle the volume of concurrent connection requests that Bcome will make (one per server in your selected namespace). 
+This can be problemmatic for some jump hosts with default configuration, that may not be setup to handle the volume of concurrent connection requests that Bcome will make (one per server in your selected node). 
 
 This can be resolved by correctly setting your jump host's SSH daemon's ``MaxStartups`` and ``MaxSessions`` attributes (if you're running OpenSSH) in line with your installation's requirements.
 

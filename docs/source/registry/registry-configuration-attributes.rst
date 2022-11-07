@@ -47,7 +47,7 @@ Here you'll find the full list of attributes for your registry.yml file (see: :d
 |		           |  'collection'.			   |					   |
 |                          |           			           |                                       |
 |			   |  Registry method will only be made    |                                       |
-|			   |  available to namespaces of the       |                                       |
+|			   |  available to nodes of the            |                                       |
 |			   |  declared type.			   |					   |
 +--------------------------+---------------------------------------+---------------------------------------+
 

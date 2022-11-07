@@ -26,10 +26,10 @@ Interactive mode is useful when managing groups of servers in a real-time scenar
 
 .. note::
 
-   Interactive mode will create a connection to every server that is a child or grand-child of the current namespace. 
+   Interactive mode will create a connection to every server that is a child or grand-child of the current node. 
    
    Once connected, connections are cached for speed with reconnections automatic.
 
 For more information on optimising your SSH for interactive mode see :doc:`../usage/optimising-ssh`
 
-Interactive mode may be invoked with the ``interactive`` command on any namespace. See :doc:`../usage/executing-commands`.
+Interactive mode may be invoked with the ``interactive`` command on any node. See :doc:`../usage/executing-commands`.

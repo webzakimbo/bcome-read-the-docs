@@ -23,14 +23,14 @@ The example below declares a shortcut to the command ``sudo puppetserver ca list
     shortcut_command: "sudo puppetserver ca list --all"
     group: certificates
 
-Any namespace with a breadcrumb matching the regular expression ``/gcp:(dev|prod):xops:puppet/`` would have the list_certs method hook available to it. 
+Any node with a breadcrumb matching the regular expression ``/gcp:(dev|prod):xops:puppet/`` would have the list_certs method hook available to it. 
 
 Internal Hooks
 --------------
 
 An Internal Hook allows for the invoking of Internal ruby scripts. 
 
-Below I declare a method hook to a custom orchestration class - ``SystemStatus``.  The namespace context in which the class is invoked would be made available to the orchestration script instance via the ``@node`` instance variable. 
+Below I declare a method hook to a custom orchestration class - ``SystemStatus``.  The node context in which the class is invoked would be made available to the orchestration script instance via the ``@node`` instance variable. 
 
 .. code-block:: bash
 
@@ -42,20 +42,20 @@ Below I declare a method hook to a custom orchestration class - ``SystemStatus``
      group: status
      orch_klass: SystemStatus
 
-Any namespace with a breadcrumb matching the regular expression ``/gcp:(dev|prod):app_servers/`` would have the 'web_status' method hook available to it.
+Any node with a breadcrumb matching the regular expression ``/gcp:(dev|prod):app_servers/`` would have the 'web_status' method hook available to it.
 
 See :doc:`../orchestration/internal-ruby-scripting` for information on how to write your internal scripts.
 
 .. note::
 
-   The full orchestration class namespace is not passed to the orch_klass parameter - only the class name.
+   The full orchestration class node is not passed to the orch_klass parameter - only the class name.
 
 Passing arguments
 ^^^^^^^^^^^^^^^^^
 
 Internal Hook invocations may be passed arguments (see :doc:`registry-configuration-attributes`) when called in Keyed-Access mode (see: :doc:`../usage/navigation`).
 
-For example, should you wish to pass an argument 'foo' with a value of 'bar' to the Internal script above for namespace 'gcp:prod:app_servers' you would invoke the following:
+For example, should you wish to pass an argument 'foo' with a value of 'bar' to the Internal script above for node 'gcp:prod:app_servers' you would invoke the following:
 
 .. code-block:: bash
 
@@ -88,9 +88,9 @@ Below I declare a method hook to call a capistrano deployment script.
      defaults:
        build: "master"
 
-When declaring a method hook to an external script, Bcome will append an environment variable named ``bcome_context`` to the command.  This allows you to link your external script to the namespace context in which it was called.
+When declaring a method hook to an external script, Bcome will append an environment variable named ``bcome_context`` to the command.  This allows you to link your external script to the node context in which it was called.
 
-The namespace context
+The node context
 ^^^^^^^^^^^^^^^^^^^^^
 
 If you invoked the method hook above as follows:
@@ -105,14 +105,14 @@ Bcome would execute the following command:
 
    bcome_context="gcp:prod:wbzsite" bundle exec cap wbz_frontend deploy build=master 
 
-Within your external script you would load your namespace context as follows:
+Within your external script you would load your node context as follows:
 
 .. code-block:: bash
 
    require 'bcome'
 
    orchestrator = ::Bcome::Orchestrator.instance
-   namespace = ORCH.get(ENV["bcome_context"])
+   node = ORCH.get(ENV["bcome_context"])
 
    ...
 

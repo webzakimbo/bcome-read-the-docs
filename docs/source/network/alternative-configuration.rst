@@ -74,7 +74,7 @@ You may now invoke it as follows:
 
    ME=bcome/username-override.yml bcome command
 
-In the example given above this particular configuration override will override the ssh username for namespace "foo:bar".  You may override any configuration in this way.
+In the example given above this particular configuration override will override the ssh username for node "foo:bar".  You may override any configuration in this way.
 
 This can be useful for
 
@@ -118,7 +118,7 @@ To override an individual server's configuration, you must use a server-override
        └── networks.yml
        └── server-overrides.yml
 
-For example, to override the connection details for 'server_a' within namespace 'foo:bar', your server-overrides.yml configuration would look as follows:
+For example, to override the connection details for 'server_a' within node 'foo:bar', your server-overrides.yml configuration would look as follows:
 
 .. code-block:: yaml
 

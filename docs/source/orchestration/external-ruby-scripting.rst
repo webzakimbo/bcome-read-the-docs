@@ -21,17 +21,17 @@ The most basic example of an external script can be seen below:
    # Define an orchestrator
    orchestrator = ::Bcome::Orchestrator.instance
 
-   # Load in a namespace
-   namespace = orchestrator.get("some:namespace:breadcrumb")   
+   # Load in a node
+   node = orchestrator.get("some:node:breadcrumb")   
 
-   # Work with your namespace
+   # Work with your node
    ...
 
-All namespaces retrieved by the orchestrator are instances of :doc:`../core-concepts/node`.
+All nodes retrieved by the orchestrator are instances of :doc:`../core-concepts/node`.
 
 .. note::
 
-  To return the root namespace using the orchestrator, pass a null breadcrumb i.e. ``orchestrator.get()`` 
+  To return the root node using the orchestrator, pass a null breadcrumb i.e. ``orchestrator.get()`` 
 
 See :doc:`../usage/executing-commands` for invoking commands and :doc:`../usage/command-menu` for a list of commands.
 

@@ -7,9 +7,9 @@
 Command Menu
 ************
 
-Bcome has a series of in-built commands that can be executed within your namespaces. 
+Bcome has a series of in-built commands that can be executed within your nodes.
 
-Within any given namespace, invoke ``menu`` to pull up the available in-built commands.
+Within any given node, invoke ``menu`` to pull up the available in-built commands.
 
 .. note::
 
@@ -25,15 +25,15 @@ Command lists
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |                                                   
-|  command                    |  description                         | namespace availability                |  
+|  command                    |  description                         | node availability                     |  
 +=============================+======================================+=======================================+
 |  menu	  	              | Returns a list of all the in-built   | All		                     | 
 |  			      | commands available at the current    |  			             |  						 
-|  			      | namespace.			     |					     |                                                   
+|  			      | node.			             |					     |                                                   
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  registry                   | Returns a list of all the custom     | All       			     |  
 |                             | commands configured to be available  | 					     |							 
-|                             | at the current namespace.            |					     |						         
+|                             | at the current node.                 |					     |						         
 +-----------------------------+--------------------------------------+---------------------------------------+
 
 Navigation commands
@@ -41,18 +41,18 @@ Navigation commands
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |                                                   
-|   command                   |  description                         | namespace availability                |
+|   command                   |  description                         | node availability                     |
 +=============================+======================================+=======================================+
 |   cd *identifier*           |  Enter a console session for a child | Collection, Inventory, Sub-selected   |
-|			      |  namespace.			     | Inventory, Merged Inventory.          |
+|			      |  node.		      	             | Inventory, Merged Inventory.          |
 |			      |  				     |					     |
 |			      |	 Console only			     |					     |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|   back                      |  Return to the parent namespace      | All                                   |
+|   back                      |  Return to the parent node           | All                                   |
 |                             |  console session.                    |                                       |
 |                             |                                      | 					     |
-|		              |  If at the root namespace, or within |					     |
-|			      |  the namespace at which the Console  |					     |
+|		              |  If at the root node, or within      |					     |
+|			      |  the node at which the Console       |					     |
 |                             |  was initiated, invoking 'back'      |					     |
 |                             |  will exit the Console.              |					     |
 |                             |                                      |                                       |
@@ -74,37 +74,37 @@ Selection Commands
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | namespace availability                |
+|  command                    |  description                         | node availability                     |
 +=============================+======================================+=======================================+
-|  workon *identifier1*,      |  Work on specific namespaces only,   | Collection, Inventory, Sub-selected   |
+|  workon *identifier1*,      |  Work on specific node only,         | Collection, Inventory, Sub-selected   |
 |  *identifier2* ...	      |  inactivating all others from the    | Inventory, Merged Inventory.          |
 |			      |  selection.                          |					     |
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  enable *identifier1*,      |  Re-enable a namespace within the    | Collection, Inventory, Sub-selected   |                                                  
-|  *identifier2*  ...         |  namespace.                          | Inventory, Merged Inventory.          |
+|  enable *identifier1*,      |  Re-enable a node within the         | Collection, Inventory, Sub-selected   |                                                  
+|  *identifier2*  ...         |  node.                               | Inventory, Merged Inventory.          |
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |              
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  disable *identifier1*,     |  Remove a namespace from the         | Collection, Inventory, Sub-selected   |                                      
+|  disable *identifier1*,     |  Remove a node from the              | Collection, Inventory, Sub-selected   |                                      
 |  *identifier2* ...          |  selection.                          | Inventory, Merged Inventory.          |
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |                                      
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  enable!                    |  Enable all namespaces within the    | Collection, Inventory, Sub-selected   |
+|  enable!                    |  Enable all node within the          | Collection, Inventory, Sub-selected   |
 |                             |  selection.			     | Inventory, Merged Inventory.          |
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  disable!                   |  Disable all namespaces within the   | Collection, Inventory, Sub-selected   |
+|  disable!                   |  Disable all node within the         | Collection, Inventory, Sub-selected   |
 |                             |  selection.			     | Inventory, Merged Inventory.          |
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+ 
 |  first                      |  A shortcut available in Keyed Access| Collection, Inventory, Sub-selected   |
 |			      |  mode only when traversing           | Inventory, Merged Inventory.	     |
-|                             |  namespaces.			     |                                       |
+|                             |  node.			             |                                       |
 |			      |					     |                                       |
 |			      |  e.g. bcome foo:bar:first:command    |					     |
 |                             |                                      |                                       |
@@ -117,7 +117,7 @@ SSH Commands
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | namespace availability                |
+|  command                    |  description                         | node availability                     |
 +=============================+======================================+=======================================+
 |  ping			      |  Test connectivity against all       | All				     |
 |			      |  servers in the selection.	     |					     |
@@ -130,7 +130,7 @@ SSH Commands
 |                             |  pseudo-shell allowing you to execute| 					     |
 |                             |  commands against all servers that   |					     |
 |                             |  are children or grandchildren of the|					     |
-|			      |  current namespace.		     | 				             |
+|			      |  current node.    		     | 				             |
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  tunnel *local port*,       |  Create a Tunnel over SSH	     | Server. 				     |
 |  *destination port*	      |  				     |				             |
@@ -154,7 +154,7 @@ File & script commands
 
 +------------------------------+--------------------------------------+---------------------------------------+
 |                              |                                      |                                       |
-|  command                     |  description                         | namespace availability                |
+|  command                     |  description                         | node availability                     |
 +==============================+======================================+=======================================+
 |  put *local/path*,           |  Upload a file (or directory,        | All				      | 
 |  */remote/path*	       |  recursively) over SCP to all        |					      |
@@ -176,23 +176,23 @@ Informational
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | namespace availability                |
+|  command                    |  description                         | node availability                     |
 +=============================+======================================+=======================================+
-|  ls                         |  List all child namespaces.          | Collection, Inventory, Sub-selected   |
+|  ls                         |  List all child node.                | Collection, Inventory, Sub-selected   |
 |                             |                                      | Inventory, Merged Inventory.          |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  lsa                        |  List all active child namespaces    | Collection, Inventory, Sub-selected   |
+|  lsa                        |  List all active child nodes         | Collection, Inventory, Sub-selected   |
 |                             |                                      | Inventory, Merged Inventory.          |
 |                             |  See :ref:`SELECTION_COMMANDS`       |                                       |
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  tree                       |  Print a tree view of all child      | Collection, Inventory, Sub-selected   |
-|                             |  namespaces and their sub-namespaces.| Inventory, Merged Inventory.          |
+|                             |  nodes and their sub-nodes.          | Inventory, Merged Inventory.          |
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  meta                       |  List all Metadata available to      | All				     |
-|			      |  the current namespace.		     |					     |
+|			      |  the current node.    	             |					     |
 |			      |					     |					     |
 |		              |  See: :doc:                          |				     	     |
 |			      |  `../metadata/metadata-commands` for | 					     |
@@ -210,7 +210,7 @@ Miscellaneous
 
 +-----------------------------+------------------------------------------------------+---------------------------------------+
 |                             |                                                      |                                       |
-|  command                    |  description                                         | namespace availability                |
+|  command                    |  description                                         | node availability                     |
 +=============================+======================================================+=======================================+
 |  reload		      |  Re-populate an inventory from its                   | Inventory, Sub-selected Inventory     |
 |			      |  source, e.g. reload all servers from                |				             |

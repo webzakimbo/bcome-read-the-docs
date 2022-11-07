@@ -9,7 +9,7 @@ Tunnel
 
 As Bcome handles your SSH configuration for you via your :doc:`../core-concepts/network-configuration`, setting up a tunnel to access a remote service - even one behind any number of proxies - becomes simple.
 
-Let's imagine you want to open up access on local port 9200 to an Elastic Search service running remotely on port 9200, and that your :doc:`../core-concepts/namespaces` are setup as follows:
+Let's imagine you want to open up access on local port 9200 to an Elastic Search service running remotely on port 9200, and that your :doc:`../core-concepts/nodes` are setup as follows:
 
 .. code-block:: bash
 
@@ -53,7 +53,7 @@ The tunnel connection is kept open until you Control+C to close the session, or 
 From an orchestration script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Where :doc:`../core-concepts/node` is an instance of your server namespace:
+Where :doc:`../core-concepts/node` is an instance of your server node:
 
 .. code-block:: ruby
 

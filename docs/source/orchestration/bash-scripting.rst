@@ -9,7 +9,7 @@ Bash scripting
 
 You may execute a local bash script against servers in your collection using the ``execute_script`` command.
 
-Let's image you have the following :doc:`../core-concepts/namespaces` setup:
+Let's image you have the following :doc:`../core-concepts/nodes` setup:
 
 .. code-block:: bash
 
@@ -59,4 +59,4 @@ Likewise, for all servers in your project:
 
 .. hint::
 
-   The Console allows for greater flexibility in working with selections of namespaces. See 'Selection Commands' in :doc:`../usage/command-menu`.
+   The Console allows for greater flexibility in working with selections of nodes. See 'Selection Commands' in :doc:`../usage/command-menu`.

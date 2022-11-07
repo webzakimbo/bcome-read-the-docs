@@ -7,18 +7,18 @@
 Namespace attributes
 ********************
 
-Here you'll find the full list of attributes you may use within your networks.yml file in order to define your :doc:`../core-concepts/namespaces`:
+Here you'll find the full list of attributes you may use within your networks.yml file in order to define your :doc:`../core-concepts/nodes`:
 
 Namespace Block
 ===============
 
-Used to configure a namespace
+Used to configure a node
 
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |                             |                             |                                       |                                                                                |
 |   attribute key             |  description                | optional                              |   notes                                                                        |
 +=============================+=============================+=======================================+================================================================================+
-|   type                      | Used to define the namespace| no                                    | See :doc:`../core-concepts/namespaces` for further information                 |
+|   type                      | Used to define the node     | no                                    | See :doc:`../core-concepts/nodes` for further information                      |
 |                             | type.                       |                                       |										     |
 |                             |                             |                                       |										     |
 |                             |                             |					    | Permitted values are 'collection', 'inventory', 'inventory-subselect' and      |
@@ -27,24 +27,25 @@ Used to configure a namespace
 |                             |                             |					    |										     |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |   description               | A description of your 	    | no				    | Your description will be used as a label within your installation's UI.        |
-|   			      | namespace.		    |					    |										     |
+|   			      | node.	   	            |					    |										     |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |   network	              | A hash of attributes        | yes				    | If left blank, any Inventories inheriting this configuration will not be       |
 |  			      | defining a Cloud Provider   | 					    | populated with servers unless a Statically defined manifest has been configured|
 |                             | configuration.              |                                       | 									             |
-|                             |                             |                                       | Restricted to namespaces of type 'collection' and 'inventory' only.            |
-| 			      |	         	            |					    |                                                                                |			
+|                             |                             |                                       | Restricted to nodes of type 'collection', 'inventory', 'gcp-k8s-cluster' and   |
+| 			      |	         	            |					    | 'aws-k8s-cluster'.                                                             |
+|                             |                             |                                       |                                                                                |			
 |			      |				    |					    | See :ref:`NETWORK_ATTRS`.                        			             |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |   ssh_settings              | A hash of attributes used to| yes                                   | Leave this blank and Bcome will default to initiating direct SSH connection    |
 |                             | define an SSH architecture. |					    | attempts only (i.e. no proxies) and will fallback to using your terminal user  |
 |                             |                             |					    | as your SSH username.  				      			     |
 |                             |				    |					    |							                             |
-|                             | 			    |					    | Restricted to namespaces of type 'collection' and 'inventory' only.            |
+|                             | 			    |					    | Restricted to nodes of type 'collection' and 'inventory' only.                 |
 |			      |				    |					    |										     |
 |			      |				    |					    | See :ref:`SSH_ATTRS`.                             			     |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
-|   sub_filter	              | A hash of attributes used to| yes                                   | Restricted to namespaces of type 'inventory-subselect' only.     		     |
+|   sub_filter	              | A hash of attributes used to| yes                                   | Restricted to nodes of type 'inventory-subselect' only.     		     |
 |		              | further filter a list of    | 					    |										     |	 
 |	                      |	machines from an inventory. |					    | If you're sub-filtering a 'gcp' inventory, your filters are a Hash of GCP tags |
 |	                      |				    |					    | and their values.				 				     |
@@ -52,22 +53,22 @@ Used to configure a namespace
 |                             |                             |                                       | If you're sub-filtering an 'aws' inventory, your filters are a Hash of EC2     |             
 |			      |				    |					    | and their values. 							     |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
-|  override_identifier        | A regular expression used to| yes                                   | Restricted to namespaces of type 'inventory', 'inventory-subselect' and        |
+|  override_identifier        | A regular expression used to| yes                                   | Restricted to nodes of type 'inventory', 'inventory-subselect' and             |
 |                             | rewrite the names of servers|                                       | 'inventory-merge'.							     |
 |			      |	within an inventory	    |					    |										     |
 |                             |                             |                                       | A regular expression with a single selector is expected, for example	     |
 |                             |                             |					    | given a server named "Foo_Bar" and a regular expression of "[a-z]*_([a-z]*)"   |
 |			      |			            |				            | the server will be renamed "Bar".						     |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+ 
-|  hidden                     | A toggle to hide a namespace| yes                                   | set to 'true' or 'false'                                                       |
+|  hidden                     | A toggle to hide a node     | yes                                   | set to 'true' or 'false'                                                       |
 |                             | from view.                  |                                       |                                                                                |
-|                             |                             |                                       | Hidden namespaces may still be interacted with, but will not appear in the     |
+|                             |                             |                                       | Hidden nodes may still be interacted with, but will not appear in the          |
 |                             |                             |                                       | user interface.                                                                |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 
 .. note::
 
-   Note that ``ssh_settings`` and ``network`` configuration may be inherited and overidden in child namespaces.
+   Note that ``ssh_settings`` and ``network`` configuration may be inherited and overidden in child nodes.
 
    See :doc:`inheritance-and-overidding`
 
@@ -195,16 +196,15 @@ See the full list of configurable attributes here:
 |                             |                             |          |                                                                                |
 |   attribute key             |  description                | optional |   notes                                                                        |
 +=============================+=============================+==========+================================================================================+
-|  host_lookup  	      | The type of host lookup to  | No       | Permitted values are: 'by_bcome_namespace',  'by_host_or_ip' or                |
+|  host_lookup  	      | The type of host lookup to  | No       | Permitted values are: 'by_bcome_node',  'by_host_or_ip' or                     |
 |                             | perform.                    |          | 'by_inventory_node'.								|
 |			      |			            |	       |										|
 |			      |				    |	       | Note that 'by_host_or_ip' must be used to reference proxies without public     |
-|		              |				    |	       | interfaces.  A future release will enable such lookups using	  	        |
-|			      |				    |	       | `by_bcome_namespace`.								|
+|		              |				    |	       | interfaces.                                                                    |
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
-|  namespace                  | A bcome namespace           | Yes      | Required for host_lookup type 'by_bcome_namespace'. Allows for referencing 	|
+|  namespace                  | A bcome node                | Yes      | Required for host_lookup type 'by_bcome_node'. Allows for referencing    	|
 |  			      | in breadcrumb format, e.g.  |	       | proxy machines that can be defined anwywhere within the Bcome installation.	|
-|			      | namespace_key:namespace_key |	       | 										|
+|			      | node_key:node_key           |	       | 										|
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
 |  host_id		      | A hostname or ip address, or| Yes      | Required for host_lookup type 'by_host_or_ip'.					|
 |  			      | reference to a host from    |          | 										|
