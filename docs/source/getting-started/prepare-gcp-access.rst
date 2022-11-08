@@ -98,7 +98,7 @@ As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compu
 
 To make use of this mechanism in your network.yml file, your configuration would look as follows:
 
-.. code-block:: yaml
+.. code-block:: json
    ---
    parent:child:
      type: collection
@@ -113,7 +113,7 @@ To make use of this mechanism in your network.yml file, your configuration would
        - https://www.googleapis.com/auth/compute.readonly
        - https://www.googleapis.com/auth/cloud-platform
 
-For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
 
 OAuth using application default credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -132,7 +132,7 @@ This is Google's default Oauth credentials for GCP.  This file, as the name sugg
 
 To make use of this mechanism in your networks.yml file, your configuration would look as follows:
 
-.. code-block:: yaml
+.. code-block:: json
    ---
    clusters:
      type: collection
@@ -190,7 +190,7 @@ Save your service account credentials json file to your .gauth directory under a
 
 To make use of this mechanism in your network.yml file, your configuration would look as follows:
 
-.. code-block:: yaml
+.. code-block:: json
    ---
    parent:child:
      type: collection
