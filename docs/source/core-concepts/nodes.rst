@@ -68,7 +68,7 @@ The following nodes type can be declared directly in the network config:
 Collection
 ^^^^^^^^^^
 
-Collections may contain any number of other collections and any number of inventories, or kubernetes clusters. It is denoted by type 'collection'.
+Collections may contain any number of other collections and any number of inventories, or kubernetes clusters. It is denoted by type ``collection``.
 
 .. code-block:: yaml
 
@@ -84,7 +84,7 @@ Collections may contain any number of other collections and any number of invent
 Inventory
 ^^^^^^^^^
 
-An inventory contains servers, either populated from a particular cloud account or from a statically defined manifest.  It is denoted by type 'inventory'.
+An inventory contains servers, either populated from a particular cloud account or from a statically defined manifest.  It is denoted by type ``inventory``.
 
 .. code-block:: yaml
 
@@ -96,7 +96,7 @@ An inventory contains servers, either populated from a particular cloud account 
 Sub-selected Inventory
 ^^^^^^^^^^^^^^^^^^^^^^
 
-A Sub-selected Inventory contains servers that have been populated as a result of applying filters to an Inventory. It is denoted by type 'inventory-subselect'.
+A Sub-selected Inventory contains servers that have been populated as a result of applying filters to an Inventory. It is denoted by type ``inventory-subselect``.
 
 It requires an origin Inventory referenced by the ``subselect_from``) attribute upon which the subselect is actioned, in addition to a filter block.
 
@@ -162,7 +162,7 @@ You could create a sub-selection from the 'servers' Inventory as follows:
 Merged Inventory
 ^^^^^^^^^^^^^^^^
 
-A merged inventory is the result of a union of two or more Inventories and/or Sub-selected inventories. It is denoted by type 'inventory-merge'.
+A merged inventory is the result of a union of two or more Inventories and/or Sub-selected inventories. It is denoted by type ``inventory-merge``.
 
 It requires contributing Inventories and/or contributing Sub-Selected-inventories to be specified using the 'contributors' attribute. For example:
 
@@ -185,7 +185,7 @@ It requires contributing Inventories and/or contributing Sub-Selected-inventorie
 GKE Cluster
 ^^^^^^^^^^^
 
-A GKE Kubernetes Cluster, hosted in Google Cloud Platform.
+A GKE Kubernetes Cluster, hosted in Google Cloud Platform. It is denoted by type ``gcp-k8s-cluster``.
 
 .. code-block:: yaml
 
@@ -203,7 +203,7 @@ A GKE Kubernetes Cluster, hosted in Google Cloud Platform.
 AWS Cluster
 ^^^^^^^^^^^
 
-An EKS Kubernetes cluster hosted in Amazon Web Services.
+An EKS Kubernetes cluster hosted in Amazon Web Services. It is denoted by type ``aws-k8s-cluster``.
 
 .. code-block:: yaml
 
