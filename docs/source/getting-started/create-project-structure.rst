@@ -54,7 +54,7 @@ Our |GUIDES|_ site is also a useful resource, as it includes example configurati
 Setup your SSH pathways
 =======================
 
-If you're not solely interacting with containers, then :doc:`../core-concepts/ssh` is core to Bcome.
+If you're not solely interacting with containers, then configuring :doc:`../core-concepts/ssh` is core to Bcome.
 
 If your server instances are not directly accessible you will need to configure your SSH pathways so that Bcome knows how to navigate the proxies you have in place.
 
