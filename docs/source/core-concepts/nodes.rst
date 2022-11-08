@@ -9,7 +9,7 @@ Nodes
 
 A node is an object that represents a resource within Bcome. It can be navigated to using the CLI, or it can be interacted with programmatically.  
 
-Exposed onto any node object - whether reached via CLI navigation, directly through keyed-access, or in custom code from a registry script -  are the methods provided by the framework (provided by the menu) and any custom tasks added by you in your framework implementation (see :doc:`registry/overview`).
+Exposed onto any node object - whether reached via CLI navigation, directly through keyed-access, or in custom code from a Registry script -  are the methods provided by the framework (provided by the menu) and any custom tasks added by you in your framework implementation (see :doc:`registry/overview`).
 
 Your installation's architecture - its interface - is determined directly by how you declare your nodes in your networks.yml file. How you do this will determine the application the framework generates for you, and what shared behaviour is inherited by child nodes.
 
