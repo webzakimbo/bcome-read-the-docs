@@ -253,7 +253,7 @@ and some uncommon ones:
 
 - Istio VirtualService
 
-A abstract Bcome node type -  a Crd, or Custom Resource Definition - is returned for any ad-hoc objects returned that do not have an explicit Bcome Kubernetes node type to assign it.
+A abstract Bcome node type -  a Crd, or Custom Resource Definition - is returned for any ad-hoc objects returned that do not have an explicit Bcome Kubernetes node type to assign it. This means that any object returned by the Kubernetes API may be incorporated into your framework installation.
 
-As for all Bcome nodes, all Kubernetes node types are provided with convenience accessors and are extensible within the framework for custom orchestration tasks.
+As for all Bcome nodes, Kubernetes node types are provided with convenience accessors and are extensible within the framework for custom orchestration tasks.
 
