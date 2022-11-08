@@ -32,7 +32,7 @@ Nodes in your networks.yml configuration are declared via YAML (see: :doc:`../ne
     description: A description of your node
     type:  the node type
 
-Nodes are laid out in a parent - child format, for example:
+Nodes are laid out in a parent -> child format, for example:
 
 .. code-block:: yaml
 
