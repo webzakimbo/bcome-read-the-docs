@@ -187,8 +187,6 @@ GKE Cluster
 
 A GKE Kubernetes Cluster, hosted in Google Cloud Platform. It is denoted by type ``gcp-k8s-cluster``.
 
-When loaded by the framework, a hierarchy of objects will be automatically created beneath the cluster node. By default, this is a hierarchy of Pods to Containers. Others may be loaded when in a Kubernetes namespace context, using the ``vrender`` and ``vfocus`` functions. All these objects are navigable in the usual way, and can be used with the Registry and Metadata framework.
-
 .. code-block:: yaml
 
    ---
@@ -204,8 +202,7 @@ When loaded by the framework, a hierarchy of objects will be automatically creat
 
 .. note::
 
-   When loaded by the framework, a hierarchy of objects will be automatically created beneath the GKE or EKS cluster nodes. By default, this is a hierarchy of Pods to Containers.  Others may be loaded when in a Kubernetes namespace context, using the ``vrender`` and ``vfocus`` functions.
-
+   When loaded by the framework, a hierarchy of nodes will be automatically created beneath the GKE or EKS cluster nodes. By default, this is a hierarchy of Pods to Containers.  Others may be loaded when in a Kubernetes namespace context, using the ``vrender`` and ``vfocus`` functions. All these nodes are navigable in the usual way, and can be used with the Registry and Metadata framework.
 
 AWS Cluster
 ^^^^^^^^^^^
