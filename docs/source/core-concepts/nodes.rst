@@ -49,9 +49,11 @@ Nodes are laid out in a parent -> child format, for example:
      description: "The child"
      type: inventory
 
-Any networking configuration declared in a parent node in the networks.yml configuration will be inherited by any child node, unless expressly overidden in the child. This allows children to inherit networking configuraton from their parent (e.g. a GCP authorisation) but override where appropriate (e.g. a location or region). For more information, see :doc:`../network/network-configuration-attributes`).
+Any networking configuration declared in a parent node in the networks.yml configuration will be inherited by any child node, unless expressly overidden in the child. This allows children to inherit networking configuraton from their parent (e.g. a GCP authorisation) but override where appropriate (e.g. a location or region).  The same is true for SSH configuration. For more information, see :doc:`../network/network-configuration-attributes`).
 
-Any metadata declared in a parent node will in inherited (i.e. available) to any child node, unless expressly overidden in the metadata for that child. For more information, see :doc:`../metadata/metadata-framework`.
+Any metadata declared in a parent node will also be inherited in any child node, unless expressly overidden in the metadata for that child. For more information, see :doc:`../metadata/metadata-framework`.
+
+This structure contextualises configuration, and allows for its re-use.
 
 .. note::
 
