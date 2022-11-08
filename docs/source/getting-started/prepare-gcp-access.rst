@@ -98,7 +98,8 @@ As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compu
 
 To make use of this mechanism in your network.yml file, your configuration would look as follows:
 
-.. code-block:: json
+.. code-block:: yaml
+
    ---
    parent:child:
      type: collection
@@ -132,7 +133,8 @@ This is Google's default Oauth credentials for GCP.  This file, as the name sugg
 
 To make use of this mechanism in your networks.yml file, your configuration would look as follows:
 
-.. code-block:: json
+.. code-block:: yaml
+
    ---
    clusters:
      type: collection
@@ -162,7 +164,7 @@ Service Account authorisation requires credentials in JSON format.
 * Follow this guide here in order to create your credentials: |GCP_SERVICE_ACCOUNT_CREDS_HOW_TO|_ 
 * Download the credentials file in JSON format and save it to your .gauth directory. Your file will look something like this:
 
-.. code-block:: json
+.. code-block:: yaml
 
    {
      "type": "service_account",
@@ -191,6 +193,7 @@ Save your service account credentials json file to your .gauth directory under a
 To make use of this mechanism in your network.yml file, your configuration would look as follows:
 
 .. code-block:: json
+
    ---
    parent:child:
      type: collection

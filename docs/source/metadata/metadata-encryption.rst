@@ -64,7 +64,7 @@ Metadata Diffs
 
 To see the differences between your encrypted metadata and unpacked metadata, use the following command:
 
-.. code-block:: yaml
+.. code-block:: bash
 
    bcome diff_metadata
 
