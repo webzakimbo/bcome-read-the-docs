@@ -68,7 +68,7 @@ The following nodes type can be declared directly in the network config:
 Collection
 ^^^^^^^^^^
 
-Collections may contain any number of other collections and any number of inventories, and is denoted by type 'collection'.
+Collections may contain any number of other collections and any number of inventories, or kubernetes clusters. It is denoted by type 'collection'.
 
 .. code-block:: yaml
 
