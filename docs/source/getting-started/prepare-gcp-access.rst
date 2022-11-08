@@ -114,7 +114,7 @@ To make use of this mechanism in your network.yml file, your configuration would
        - https://www.googleapis.com/auth/compute.readonly
        - https://www.googleapis.com/auth/cloud-platform
 
-For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
+For more information on your networks.yml file, see here: :doc:`../core-concepts/nodes`.
 
 OAuth using application default credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -208,5 +208,4 @@ To make use of this mechanism in your network.yml file, your configuration would
        - https://www.googleapis.com/auth/cloud-platform
        service_account_credentials: YOUR_SERVICE_ACCOUNT_CREDENTIALS.json
 
-For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
-
+For more information on your networks.yml file, see here: :doc:`../core-concepts/nodes`.
