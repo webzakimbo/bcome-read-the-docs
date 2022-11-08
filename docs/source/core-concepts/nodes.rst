@@ -150,7 +150,9 @@ You could create a sub-selection from the 'servers' Inventory as follows:
      subselect_from: platform:production:servers
      sub_filter: {} 
 
-The root collection key in the sub-select_from attribute - in this instance 'estate' - is implicit.
+.. note::
+  
+   The root collection key in the sub-select_from attribute - in this instance 'estate' - is implicit.
     
 .. note:: 
 
