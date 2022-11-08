@@ -7,15 +7,15 @@
 Nodes
 *****
 
-A node is an object that represents a resource within Bcome. It can be navigated to using the CLI, or it can be interacted with programmatically.  Exposed onto any node object - whether reached via CLI navigation, directly through keyed-access, or in custom code from a registry script - are in-built contextual methods provided by the framework (e.g. 'ssh', to access a virtual machine, or 'read' to interpret a Kubernetes secret in human readable form), or registry methods added by you in your framework implementation.
+A node is an object that represents a resource within Bcome. It can be navigated to using the CLI, or it can be interacted with programmatically.  
 
-Your installation's architecture is determined directly by how you declare your nodes in your networks.yml file. How you lay out your nodes will determine the interface the framework will generate for you.
+Exposed onto any node object - whether reached via CLI navigation, directly through keyed-access, or in custom code from a registry script,  are the methods provided by the framework (provided by the menu) and any custom tasks added by you in your framework implementation (see :doc:`registry/overview`).
+
+Your installation's architecture - its interface - is determined directly by how you declare your nodes in your networks.yml file. How you do this will determine the application the framework generates for you, and what shared behaviour is inherited by child nodes.
 
 .. note::
 
-   If you don't have a networks.yml file yet, you will need to initialize your project. 
-
-For project initialisation see: :doc:`getting-started/setting-up-your-project`.
+   If you don't have a networks.yml file yet, you will need to initialize your project. See: :doc:`getting-started/setting-up-your-project`.
 
 Nodes in your networks.yml configuration are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
 
