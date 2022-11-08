@@ -109,4 +109,4 @@ To make use of your authorization in your networks.yml file, your configuration 
 
 For more information on your networks.yml file, see here: :doc:`../core-concepts/nodes`. 
 
-For further configuration options, see :doc:`../core-concepts/network-configuration`.
+For further configuration options, see :doc:`../core-concepts/network-configuration-attributes`.
