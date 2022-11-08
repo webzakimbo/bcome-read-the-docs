@@ -98,21 +98,20 @@ As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compu
 
 To make use of this mechanism in your network.yml file, your configuration would look as follows:
 
-```
-  ---
-  parent:child:
-    type: collection
-    description: Example custom OAuth application
+.. code-block:: yaml
+   ---
+   parent:child:
+     type: collection
+     description: Example custom OAuth application
 
-    network:
-      type: gcp
-      project: YOUR_PROJECT_NAME
-      authentication_scheme: oauth
-      secrets_filename: YOUR_SECRETS_FILE_NAME.json
-      service_scopes:
-      - https://www.googleapis.com/auth/compute.readonly
-      - https://www.googleapis.com/auth/cloud-platform
-```
+     network:
+       type: gcp
+       project: YOUR_PROJECT_NAME
+       authentication_scheme: oauth
+       secrets_filename: YOUR_SECRETS_FILE_NAME.json
+       service_scopes:
+       - https://www.googleapis.com/auth/compute.readonly
+       - https://www.googleapis.com/auth/cloud-platform
 
 For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
 
@@ -123,32 +122,33 @@ You can authorise with OAuth using Google's default OAuth application if you don
 
 Assuming you've run ``bcome init`` you'll see the following file in your ``.gauth`` directory:
 
-```
-  .gauth
-  └── googles-not-so-secret-client-secrets.json
-```
+.. code-block:: bash
+
+   .gauth
+   └── googles-not-so-secret-client-secrets.json
+
 
 This is Google's default Oauth credentials for GCP.  This file, as the name suggests, is not-so-secret - it's packaged along with the ``gcloud`` distribution, and is what the gcloud binary uses in its authorisation process.  Authorising with this will instruct the framework to authenticate and authorise you in an OAuth loop against Google's default OAuth application.
 
 To make use of this mechanism in your networks.yml file, your configuration would look as follows:
 
-```
-  ---
-  clusters:
-    type: collection
-    description: A collection making use of default Google Oauth
-    network:
-      type: gcp
-      authentication_scheme: oauth
-      secrets_filename: googles-not-so-secret-client-secrets.json
-      service_scopes:
-      - openid
-      - https://www.googleapis.com/auth/userinfo.email
-      - https://www.googleapis.com/auth/cloud-platform
-      - https://www.googleapis.com/auth/appengine.admin
-      - https://www.googleapis.com/auth/compute
-      - https://www.googleapis.com/auth/accounts.reauth
-```
+.. code-block:: yaml
+   ---
+   clusters:
+     type: collection
+     description: A collection making use of default Google Oauth
+     network:
+       type: gcp
+       authentication_scheme: oauth
+       secrets_filename: googles-not-so-secret-client-secrets.json
+       service_scopes:
+       - openid
+       - https://www.googleapis.com/auth/userinfo.email
+       - https://www.googleapis.com/auth/cloud-platform
+       - https://www.googleapis.com/auth/appengine.admin
+       - https://www.googleapis.com/auth/compute
+       - https://www.googleapis.com/auth/accounts.reauth
+
 
 Note that you will still need to require defined service scopes, as above.
 
@@ -190,21 +190,20 @@ Save your service account credentials json file to your .gauth directory under a
 
 To make use of this mechanism in your network.yml file, your configuration would look as follows:
 
-```
-  ---
-  parent:child:
-    type: collection
-    description: Service account authorisation
+.. code-block:: yaml
+   ---
+   parent:child:
+     type: collection
+     description: Service account authorisation
   
-    network:
-      type: gcp
-      project: wbznet
-      authentication_scheme: oauth
-      service_scopes:
-      - https://www.googleapis.com/auth/compute.readonly
-      - https://www.googleapis.com/auth/cloud-platform
-      service_account_credentials: YOUR_SERVICE_ACCOUNT_CREDENTIALS.json
-```
+     network:
+       type: PROJECT_NAME
+       project: wbznet
+       authentication_scheme: oauth
+       service_scopes:
+       - https://www.googleapis.com/auth/compute.readonly
+       - https://www.googleapis.com/auth/cloud-platform
+       service_account_credentials: YOUR_SERVICE_ACCOUNT_CREDENTIALS.json
 
 For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
 
