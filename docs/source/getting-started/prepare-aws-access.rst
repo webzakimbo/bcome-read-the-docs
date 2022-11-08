@@ -107,7 +107,6 @@ To make use of your authorization in your networks.yml file, your configuration 
       credentials_key: YOUR_CREDENTIAL_KEY_NAME
       provisioning_region: PROVISIONING_REGION
 
-
-For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
+For more information on your networks.yml file, see here: :doc:`../core-concepts/nodes`. 
 
 For further configuration options, see :doc: `../core-concepts/network-configuration`.
