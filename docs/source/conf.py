@@ -9,12 +9,12 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Bcome Documentation'
-copyright = u'2020 Webzakimbo Ltd.'
+copyright = u'2023 Webzakimbo Ltd.'
 
 author = u'Webzakimbo Ltd.'
 
-version = u'2.0'        # CHANGE ME when release new version
-release = u'2.0.0'      # ditto & urls.rst NOT dynamic. Need updating in there too.
+version = u'3.0'        # CHANGE ME when release new version
+release = u'3.0.0'      # ditto & urls.rst NOT dynamic. Need updating in there too.
 
 html_favicon = '_static/images/favicon.png'
 html_logo = '_static/images/bcome-logo-docs.png'
