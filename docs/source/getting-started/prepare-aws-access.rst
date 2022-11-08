@@ -91,6 +91,23 @@ Given a second AWS account referenced by the key 'my other key', your keys file 
 
    For a demonstration of an AWS authorization in use, please see the |AWS_AUTH_GUIDE|_
 
-.. hint::
+Using an AWS authorization
+--------------------------
 
-   To add your AWS authorization to your network configuration, see :doc:`../core-concepts/network-configuration`. 
+To make use of your authorization in your networks.yml file, your configuration would look as follows:
+
+.. code-block:: yaml
+
+   ---
+   parent:child:
+    type: collection
+    description: AWS Authorisation
+    network:
+      type: ec2
+      credentials_key: YOUR_CREDENTIAL_KEY_NAME
+      provisioning_region: PROVISIONING_REGION
+
+
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
+
+For further configuration options, see :doc:`../core-concepts/network-configuration`.

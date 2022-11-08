@@ -154,7 +154,7 @@ To make use of this mechanism in your networks.yml file, your configuration woul
 
 Note that you will still need to require defined service scopes, as above.
 
-For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
 
 Service Account
 ===============
@@ -208,5 +208,5 @@ To make use of this mechanism in your network.yml file, your configuration would
        - https://www.googleapis.com/auth/cloud-platform
        service_account_credentials: YOUR_SERVICE_ACCOUNT_CREDENTIALS.json
 
-For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes`.
 
