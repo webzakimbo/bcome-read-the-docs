@@ -114,7 +114,6 @@ To make use of this mechanism in your network.yml file, your configuration would
       - https://www.googleapis.com/auth/cloud-platform
 ```
 
-
 For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
 
 OAuth Using application default credentials
@@ -188,4 +187,24 @@ Save your service account credentials json file to your .gauth directory under a
 .. hint::
 
    To add your GCP authorisation to your network configuration, see :doc:`../core-concepts/network-configuration`.
+
+To make use of this mechanism in your network.yml file, your configuration would look as follows:
+
+```
+  ---
+  parent:child:
+    type: collection
+    description: Service account authorisation
+  
+    network:
+      type: gcp
+      project: wbznet
+      authentication_scheme: oauth
+      service_scopes:
+      - https://www.googleapis.com/auth/compute.readonly
+      - https://www.googleapis.com/auth/cloud-platform
+      service_account_credentials: YOUR_SERVICE_ACCOUNT_CREDENTIALS.json
+```
+
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
 
