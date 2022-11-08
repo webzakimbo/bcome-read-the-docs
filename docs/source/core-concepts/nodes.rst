@@ -7,6 +7,9 @@
 Nodes
 *****
 
+Introduction
+============
+
 A node is an object that represents a resource within Bcome. It can be navigated to using the CLI, or it can be interacted with programmatically.  
 
 Exposed onto any node object - whether reached via CLI navigation, directly through keyed-access, or in custom code from a Registry script -  are the methods provided by the framework (provided by the menu) and any custom tasks added by you in your framework implementation (see :doc:`../registry/overview`).
@@ -16,6 +19,9 @@ Your installation's architecture - its interface - is determined directly by how
 .. note::
 
    If you don't have a networks.yml file yet, you will need to initialize your project. See: :doc:`../getting-started/setting-up-your-project`.
+
+Declaring Nodes
+===============
 
 Nodes in your networks.yml configuration are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
 
@@ -42,6 +48,10 @@ Nodes are laid out in a parent - child format, for example:
    grandparent:parent:child:
      description: "The child"
      type: inventory
+
+Any networking configuration declared in a parent node in the networks.yml configuration will be inherited by any child node, unless expressly overidden in the child. This allows children to inherit networking configuraton from their parent (e.g. a GCP authorisation) but override where appropriate (e.g. a location or region). For more information, see :doc:`../network/network-configuration-attributes`).
+
+Any metadata declared in a parent node will in inherited (i.e. available) to any child node, unless expressly overidden in the metadata for that child. For more information, see :doc:`../metadata/metadata-framework`.
 
 .. note::
 
