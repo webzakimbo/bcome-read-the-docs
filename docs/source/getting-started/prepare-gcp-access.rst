@@ -115,7 +115,7 @@ To make use of this mechanism in your network.yml file, your configuration would
 
 For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
 
-OAuth Using application default credentials
+OAuth using application default credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can authorise with OAuth using Google's default OAuth application if you don't want to setup your own.
@@ -125,7 +125,7 @@ Assuming you've run ``bcome init`` you'll see the following file in your ``.gaut
 .. code-block:: bash
 
    .gauth
-   └── googles-not-so-secret-client-secrets.json
+    └── googles-not-so-secret-client-secrets.json
 
 
 This is Google's default Oauth credentials for GCP.  This file, as the name suggests, is not-so-secret - it's packaged along with the ``gcloud`` distribution, and is what the gcloud binary uses in its authorisation process.  Authorising with this will instruct the framework to authenticate and authorise you in an OAuth loop against Google's default OAuth application.
