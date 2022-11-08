@@ -20,15 +20,11 @@ If you want to integrate a GCP account, then follow the steps here.
 Create directory structure
 ==========================
 
-For both ``OAuth 2.0`` and ``Service account`` authorisation methods, create a directory named ``.gauth`` in the root of your project directory.
+For both ``OAuth 2.0`` and ``Service account`` authorisation methods, ensure you have a directory named ``.gauth`` in the root of your project directory.
 
-If you've correctly setup your project directory structure (see: :doc:`create-project-structure`), your directory structure should now look like::
+You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc: `../getting-started/setting-up-your-project`.
 
-   .
-   ├── .gauth
-   ├── Gemfile
-   └── bcome
-       └── networks.yml
+See also :doc: `create-project-structure`.
 
 .. warning::
 
@@ -39,6 +35,9 @@ If you've correctly setup your project directory structure (see: :doc:`create-pr
 
 OAuth 2.0
 =========
+
+Your own OAuth 2.0 Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To integrate OAuth 2.0 with Bcome, you'll need to create a client id and secret.  To do this, follow these steps:
 
@@ -96,6 +95,65 @@ As a final step, visit |GCP_COMPUTE_API|_ and hit ``ENABLE`` to enable the Compu
    Your OAuth 2.0 users will need as minimum the ``compute.instances.list`` permission.
 
 .. _SERVICE_ACCOUNT:
+
+To make use of this mechanism in your network.yml file, your configuration would look as follows:
+
+```
+  ---
+  parent:child:
+    type: collection
+    description: Example custom OAuth application
+
+    network:
+      type: gcp
+      project: YOUR_PROJECT_NAME
+      authentication_scheme: oauth
+      secrets_filename: YOUR_SECRETS_FILE_NAME.json
+      service_scopes:
+      - https://www.googleapis.com/auth/compute.readonly
+      - https://www.googleapis.com/auth/cloud-platform
+```
+
+
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
+
+OAuth Using application default credentials
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can authorise with OAuth using Google's default OAuth application if you don't want to setup your own.
+
+Assuming you've run ``bcome init`` you'll see the following file in your ``.gauth`` directory:
+
+```
+  .gauth
+  └── googles-not-so-secret-client-secrets.json
+```
+
+This is Google's default Oauth credentials for GCP.  This file, as the name suggests, is not-so-secret - it's packaged along with the ``gcloud`` distribution, and is what the gcloud binary uses in its authorisation process.  Authorising with this will instruct the framework to authenticate and authorise you in an OAuth loop against Google's default OAuth application.
+
+To make use of this mechanism in your networks.yml file, your configuration would look as follows:
+
+```
+  ---
+  clusters:
+    type: collection
+    description: A collection making use of default Google Oauth
+    network:
+      type: gcp
+      authentication_scheme: oauth
+      secrets_filename: googles-not-so-secret-client-secrets.json
+      service_scopes:
+      - openid
+      - https://www.googleapis.com/auth/userinfo.email
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/appengine.admin
+      - https://www.googleapis.com/auth/compute
+      - https://www.googleapis.com/auth/accounts.reauth
+```
+
+Note that you will still need to require defined service scopes, as above.
+
+For more information on your networks.yml file, see here: :doc: `../core-concepts/nodes.rst`.
 
 Service Account
 ===============
