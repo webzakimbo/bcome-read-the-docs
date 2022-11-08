@@ -45,9 +45,11 @@ Your project directory should now look as follows:
   .
   ├── .aws
   ├── .gauth
+  ├── .kubectl/
   ├── Gemfile
   └── bcome
-      ├── metadata
+      ├── k8_hierarchy.yml
+      ├── metadata/
       ├── networks.yml
-      ├── orchestration
+      ├── orchestration/
       └── registry.yml
