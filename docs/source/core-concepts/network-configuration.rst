@@ -7,7 +7,7 @@
 Network Configuration
 *********************
 
-Your Network Configuration defines the architecture of your :doc:`nodes` and SSH configuration.  
+Your Network Configuration defines the architecture of your :doc:`nodes`.  
 
 In its most basic form it is a single YAML configuration file named ``networks.yml`` and stored within your ``bcome`` configuration directory (see: :doc:`../getting-started/create-project-structure`).
 
