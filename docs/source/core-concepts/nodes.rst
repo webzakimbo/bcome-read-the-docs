@@ -7,11 +7,13 @@
 Nodes
 *****
 
-Your installation's architecture will be determined directly by how you lay out your nodes, which should be a direct representation of how you wish to visualize and manage your platforms, environments, applications etc.
+Your installation's architecture is determined directly by how you declare your nodes in your networks.yml file. This represents how you wish to visualize, and by definition manage, your platforms, environments, applications etc.  
 
-The sum-total of all your nodes is referred to within Bcome as your :doc:`../core-concepts/estate`.
+.. note::
 
-Nodes are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
+   If you don't have a networks.yml file yet, you will need to initialize your project. See: :doc:`getting-started/setting-up-your-project`.
+
+Nodes in your networks.yml configuration are declared via YAML (see: :doc:`../network/network-configuration-attributes`) in the following format:
 
 .. code-block:: yaml
 
