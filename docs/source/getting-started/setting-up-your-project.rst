@@ -8,9 +8,7 @@ Installing and Initializing Bcome
 
 .. hint::
 
-   Make sure you've read the installation requirements: :doc:`../getting-started/setting-up-your-project`.
-
-   If you're new to Ruby, consider using |RVM_URL|_ to manage it.
+   Make sure you've read the installation requirements: :doc:`../getting-started/setting-up-your-project`, and if you're new to Ruby, then consider using |RVM_URL|_ to manage it.
   
 Create a project directory:
 
