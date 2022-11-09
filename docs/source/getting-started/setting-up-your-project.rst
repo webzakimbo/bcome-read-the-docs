@@ -45,11 +45,12 @@ Your project directory should now look as follows:
   .
   ├── .aws
   ├── .gauth
-  ├── .kubectl/
-  ├── Gemfile
+  │   └── googles-not-so-secret-client-secrets.json
+  ├── .kubectl
   └── bcome
       ├── k8_hierarchy.yml
-      ├── metadata/
+      ├── metadata
       ├── networks.yml
-      ├── orchestration/
+      ├── orchestration
       └── registry.yml
+
