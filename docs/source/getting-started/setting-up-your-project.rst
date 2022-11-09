@@ -6,18 +6,16 @@
 Installing and Initializing Bcome
 =================================
 
+.. note::
+
+   Make sure you've read the installation requirements: :doc:`../getting-started/setting-up-your-project`.
+  
 Create a project directory:
 
 .. code-block:: bash
 
    mkdir project
    cd project
-
-.. note::
-
-   You've remembered to install Ruby 2.5 or greater, right?  
-
-   Check out how to manage ruby with |RVM_URL|_.
 
 Now install the |BCOME_GEM|_ manually:
 
