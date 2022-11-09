@@ -15,9 +15,13 @@ A Bcome installation is configured through the definition of a networks.yml conf
 * Declare nodes through parent-child relationships
 * Declare your nodes' configuration elements, for example, your SSH architecture.
 
-To begin, navigate to your project directory, and then within the `bcome` directory, ensure that you have created a networks.yml file.
+To begin, navigate to your project directory, and initialize your project using: 
 
-For reference, have a look at what your project structure should look like: :doc:`../getting-started/create-project-structure`.
+.. code-block:: bash
+
+   bcome init
+
+For more information see: :doc: `../getting-started/setting-up-your-project`. 
 
 Also understand what the available Bcome nodes are: :doc:`../core-concepts/nodes`.
 
