@@ -21,7 +21,7 @@ To begin, navigate to your project directory, and initialize your project using:
 
    bcome init
 
-For more information see: :doc: `../getting-started/setting-up-your-project`. 
+For more information see: :doc:`../getting-started/setting-up-your-project`.
 
 Also understand what the available Bcome nodes are: :doc:`../core-concepts/nodes`.
 
