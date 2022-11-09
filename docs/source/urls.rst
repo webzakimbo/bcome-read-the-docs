@@ -55,3 +55,8 @@
 
 .. |RVM_URL| replace:: Rvm
 .. _RVM_URL: https://rvm.io
+
+.. |BCOME_GEM| replace:: Bcome Gem
+.. _BCOME_GEM: https://https://rubygems.org/gems/bcome
+
+

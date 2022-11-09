@@ -19,7 +19,7 @@ Create a project directory:
 
    Check out how to manage ruby with |RVM_URL|_.
 
-Install the bcome gem, manually:
+Now install the |BCOME_GEM|_ manually:
 
 .. code-block:: bash
 
