@@ -13,6 +13,12 @@ Create a project directory:
    mkdir project
    cd project
 
+.. note::
+
+   You've remember to install Ruby 2.5 or greater, right?  
+
+   Check out how to manage ruby with `rvm <https://rvm.io/>`_`  
+
 Install the bcome gem, manually:
 
 .. code-block:: bash
@@ -30,6 +36,7 @@ Which you can then install via bundler:
 
 .. code-block:: bash
 
+   gem install bundler
    bundle install
 
 Now run the initializer to create your configuration files & directories:
