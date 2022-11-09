@@ -6,7 +6,7 @@
 Installing and Initializing Bcome
 =================================
 
-.. note::
+.. hint::
 
    Make sure you've read the installation requirements: :doc:`../getting-started/setting-up-your-project`.
 
