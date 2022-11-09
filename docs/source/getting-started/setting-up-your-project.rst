@@ -17,7 +17,7 @@ Create a project directory:
 
    You've remembered to install Ruby 2.5 or greater, right?  
 
-   Check out how to manage ruby with `rvm <https://rvm.io/>`_`  
+   Check out how to manage ruby with |RVM_URL|_.
 
 Install the bcome gem, manually:
 

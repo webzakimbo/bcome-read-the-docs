@@ -53,3 +53,5 @@
 .. |EC2_FILTER_LIST| replace:: EC2 Filter List
 .. _EC2_FILTER_LIST: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instances.html
 
+.. |RVM_URL| replace:: Rvm
+.. _RVM_URL: https://rvm.io
