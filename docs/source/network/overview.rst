@@ -23,9 +23,9 @@ To begin, navigate to your project directory, and initialize your project using:
 
 For more information see: :doc:`../getting-started/setting-up-your-project`.
 
-Also understand what the available Bcome nodes are: :doc:`../core-concepts/nodes`.
+.. hint::
 
-Configuration
-=============
+  Understand how nodes work in Bcome: :doc:`../core-concepts/nodes`.
 
-Your network is configured by first defining :doc:`../core-concepts/nodes`, which determine your installation's architecture, followed by configuring your nodes by declaring :doc:`elements`.
+  Your installation's architecture will be determined by how you lay out your nodes.`
+
