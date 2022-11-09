@@ -15,7 +15,7 @@ Create a project directory:
 
 .. note::
 
-   You've remember to install Ruby 2.5 or greater, right?  
+   You've remembered to install Ruby 2.5 or greater, right?  
 
    Check out how to manage ruby with `rvm <https://rvm.io/>`_`  
 
