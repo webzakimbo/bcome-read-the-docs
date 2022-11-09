@@ -29,6 +29,7 @@ Or, via a Gemfile:
 
 .. code-block:: bash
 
+   # Gemfile contents. Place this in the root of your project directory.
    source 'https://rubygems.org'
    gem 'bcome'
 
