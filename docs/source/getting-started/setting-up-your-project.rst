@@ -52,7 +52,7 @@ Or if you've installed via bundler
 
 .. hint::
 
-   It's better to use bundler and even better to alias ``bundle exec bcome`` in your $PATH to shorten how you invoke the framework.  I normally alias to just ``b``
+   It's better to use ``bundler`` and even better to alias ``bundle exec bcome`` in your $PATH to shorten how you invoke the framework.  I normally alias to just ``b``
 
 If you've correctly set everything up, your project directory should now look as follows:
 
