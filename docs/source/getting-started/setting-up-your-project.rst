@@ -26,7 +26,7 @@ Or, via a Gemfile:
    source 'https://rubygems.org'
    gem 'bcome'
 
-Which you can then install via bundle:
+Which you can then install via bundler:
 
 .. code-block:: bash
 
@@ -38,15 +38,25 @@ Now run the initializer to create your configuration files & directories:
 
    bcome init 
 
-Your project directory should now look as follows:
+Or if you've installed via bundler
+
+.. code-block:: bash
+
+   bundle exec bcome init
+
+.. hint::
+
+   It's better to use bundler and even better to alias ``bundle exec bcome`` in your $PATH to shorten how you invoke the framework.  I normally alias to just ``b``
+
+If you've correctly set everything up, your project directory should now look as follows:
 
 .. code-block:: bash
 
   .
-  ├── .aws
-  ├── .gauth
+  ├── .aws/
+  ├── .gauth/
   │   └── googles-not-so-secret-client-secrets.json
-  ├── .kubectl
+  ├── .kubectl/
   └── bcome
       ├── k8_hierarchy.yml
       ├── metadata
