@@ -64,3 +64,16 @@ If you've correctly set everything up, your project directory should now look as
       ├── orchestration
       └── registry.yml
 
+Directory and config structure overview
+=======================================
+
+TODO
+
+
+
+
+
+
+
+
+
