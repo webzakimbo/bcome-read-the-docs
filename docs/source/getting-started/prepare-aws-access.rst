@@ -22,7 +22,7 @@ Create directory structure
 
 You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc:`../getting-started/setting-up-your-project`.
 
-See also :doc: `create-project-structure`.
+See also :doc:`create-project-structure`.
 
 One of the directories created in the root of your project will be named ``.aws``. 
 
