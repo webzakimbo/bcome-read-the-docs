@@ -22,9 +22,9 @@ Create directory structure
 
 For both ``OAuth 2.0`` and ``Service account`` authorisation methods, ensure you have a directory named ``.gauth`` in the root of your project directory.
 
-You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc: `../getting-started/setting-up-your-project`.
+You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc:`../getting-started/setting-up-your-project`.
 
-See also :doc: `create-project-structure`.
+See also :doc:`create-project-structure`.
 
 .. warning::
 
