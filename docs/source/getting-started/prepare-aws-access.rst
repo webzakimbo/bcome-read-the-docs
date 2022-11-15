@@ -45,7 +45,7 @@ The Bcome framework will use this key & secret in order to conduct queries again
 Add the AWS keys to your bcome project
 ---------------------------------------
 
-Create a file named ``keys`` in your .aws directory
+Create a file named ``keys`` in the ``.aws`` directory created by ``bcome init`` in the root of your project.
 
 Within this file, create a key to reference your AWS account e.g. my_key
 
