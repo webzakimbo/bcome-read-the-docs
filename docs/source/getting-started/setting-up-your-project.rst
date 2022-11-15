@@ -62,31 +62,9 @@ If you've correctly set everything up, your project directory should now look as
   ├── .aws/
   ├── .gauth/
   │   └── googles-not-so-secret-client-secrets.json
-  ├── .kubectl/
   └── bcome
       ├── k8_hierarchy.yml
-      ├── metadata
+      ├── metadata/
       ├── networks.yml
-      ├── orchestration
+      ├── orchestration/
       └── registry.yml
-
-Directory and config structure overview
-=======================================
-
-.aws
-----
-
-Location for any AWS credentials you add. See :doc:`../getting-started/prepare-aws-access` for more information.
-
-.gauth
-------
-
-Loction for your GCP OAuth Credentials, and service account keys. See :doc:`../getting-started/prepare-gcp-access` for more information.
-
-
-
-
-
-
-
-
