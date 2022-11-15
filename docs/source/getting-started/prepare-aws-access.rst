@@ -20,16 +20,11 @@ If you want to integrate an AWS account, then follow the steps here.
 Create directory structure
 ==========================
 
-Create a directory named ``.aws`` in the root of your project directory.
+You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc: `../getting-started/setting-up-your-project`.
 
-If you've correctly setup your project directory structure (see: :doc:`create-project-structure`), your directory structure should now look like::
+See also :doc: `create-project-structure`.
 
-   .
-   ├── .aws
-   ├── Gemfile
-   └── bcome
-       └── networks.yml
-
+One of the directories created in the root of your project will be named ``.aws``. 
 
 Generate an AWS access key and secret access key
 ------------------------------------------------
