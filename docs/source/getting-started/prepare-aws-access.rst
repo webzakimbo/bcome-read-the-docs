@@ -20,7 +20,7 @@ If you want to integrate an AWS account, then follow the steps here.
 Create directory structure
 ==========================
 
-You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc: `../getting-started/setting-up-your-project`.
+You haven't already done so, run ``bcome init`` to setup your project directory structure. For more information see :doc:`../getting-started/setting-up-your-project`.
 
 See also :doc: `create-project-structure`.
 
