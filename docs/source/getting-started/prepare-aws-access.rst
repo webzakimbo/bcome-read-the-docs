@@ -24,8 +24,6 @@ You haven't already done so, run ``bcome init`` to setup your project directory 
 
 See also :doc:`create-project-structure`.
 
-One of the directories created in the root of your project will be named ``.aws``. 
-
 Generate an AWS access key and secret access key
 ------------------------------------------------
 

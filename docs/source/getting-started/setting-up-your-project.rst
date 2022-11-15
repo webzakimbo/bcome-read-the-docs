@@ -73,8 +73,15 @@ If you've correctly set everything up, your project directory should now look as
 Directory and config structure overview
 =======================================
 
-TODO
+.aws
+----
 
+Location for any AWS credentials you add. See :doc:`../getting-started/prepare-aws-access` for more information.
+
+.gauth
+------
+
+Loction for your GCP OAuth Credentials, and service account keys. See :doc:`../getting-started/prepare-gcp-access` for more information.
 
 
 
