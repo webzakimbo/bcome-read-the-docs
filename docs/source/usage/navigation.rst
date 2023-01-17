@@ -54,12 +54,24 @@ Traverse to the 'child' node, and onward to 'grandchild':
   > cd child
   > cd grandchild
 
+Or key in directly using the breadcrumb:
+
+.. code-block:: bash
+
+  > cd child:grandchild
+
+Or key directly to a breadcrumb referenced from the root of your installation:
+
+.. code-block:: bash
+
+  > cd #child:grandchild
 
 Go back up a level:
 
 .. code-block:: bash
 
-  > back 
+  > back # OR cd .. 
+
 
 Exit back to you terminal:
 
