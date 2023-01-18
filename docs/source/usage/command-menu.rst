@@ -192,9 +192,6 @@ Informational
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  config                     |  Display the config for a node's     | Any kubernetes node.                  | 
-|                             |  associated kubernetes object.       |                                       |
-+-----------------------------+--------------------------------------+---------------------------------------+
 |  tree                       |  Print a tree view of all child      | Collection, Inventory, Sub-selected   |
 |                             |  nodes and their sub-nodes.          | Inventory, Merged Inventory.          |
 +-----------------------------+--------------------------------------+---------------------------------------+
@@ -258,7 +255,7 @@ Kubernetes
 |  sh                         |  Enter a shell on a running container.   | Kubernetes container.                 |
 +-----------------------------+------------------------------------------+---------------------------------------+
 |  focus *object*             |  Switch workspace to focus on a specific | GKE Cluster, EKS Cluster.             |  
-|                             |  kubernetes resource type. E.g. for      |                                       |
+|                             |  kubernetes resource type.               |                                       |
 |                             |                                          |                                       |
 |                             |  e.g. for secrets, *focus secret*        |                                       |
 +-----------------------------+------------------------------------------+---------------------------------------+
