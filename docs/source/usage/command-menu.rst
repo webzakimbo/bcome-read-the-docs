@@ -25,7 +25,7 @@ Command lists
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |                                                   
-|  command                    |  description                         | node availability                     |  
+|  command                    |  description                         | node type                             |  
 +=============================+======================================+=======================================+
 |  menu	  	              | Returns a list of all the in-built   | All		                     | 
 |  			      | commands available at the current    |  			             |  						 
@@ -41,7 +41,7 @@ Navigation commands
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |                                                   
-|   command                   |  description                         | node availability                     |
+|   command                   |  description                         | node type                             |
 +=============================+======================================+=======================================+
 |   cd name                   |  Enter a console session for a child | Collection, Inventory, Sub-selected   |
 |			      |  node.		      	             | Inventory, Merged Inventory.          |
@@ -75,7 +75,7 @@ Selection Commands
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | node availability                     |
+|  command                    |  description                         | node type                             |
 +=============================+======================================+=======================================+
 |  workon *identifier1*,      |  Work on specific node only,         | Collection, Inventory, Sub-selected   |
 |  *identifier2* ...	      |  inactivating all others from the    | Inventory, Merged Inventory.          |
@@ -118,7 +118,7 @@ SSH Commands
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | node availability                     |
+|  command                    |  description                         | node type                             |
 +=============================+======================================+=======================================+
 |  ping			      |  Test connectivity against all       | All				     |
 |			      |  servers in the selection.	     |					     |
@@ -155,7 +155,7 @@ File & script commands
 
 +------------------------------+--------------------------------------+---------------------------------------+
 |                              |                                      |                                       |
-|  command                     |  description                         | node availability                     |
+|  command                     |  description                         | node type                             |
 +==============================+======================================+=======================================+
 |  put *local/path*,           |  Upload a file (or directory,        | All				      | 
 |  */remote/path*	       |  recursively) over SCP to all        |					      |
@@ -177,7 +177,7 @@ Informational
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | node availability                     |
+|  command                    |  description                         | node type                             |
 +=============================+======================================+=======================================+
 |  ls                         |  List all child node.                | Collection, Inventory, Sub-selected   |
 |                             |                                      | Inventory, Merged Inventory.          |
@@ -211,13 +211,74 @@ Informational
 |  routes		      |  Print SSH routing tree.             | All, excluding Kubernetes nodes       |
 +-----------------------------+--------------------------------------+---------------------------------------+
 
+Kubernetes
+----------
+
++-----------------------------+------------------------------------------+---------------------------------------+
+|                             |                                          |                                       |
+|  command                    |  description                             | node type                             |
++=============================+==========================================+=======================================+
+|  config                     |  Display the config for a node's         | Any kubernetes node.                  |
+|                             |  associated kubernetes object.           |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  logs                       |  Aggregate logs from all containers      | Any kubernetes node.                  |
+|                             |  into one live stream.                   |                                       |                                             
++-----------------------------+------------------------------------------+---------------------------------------+
+|  pathways                   |  Render a tree view of all routing       | Any kubernetes node.                  |
+|                             |  pathways (hosts->path->pod->container). |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  helm                       |  Access an interactive helm shell        | GKE Cluster, EKS Cluster, Kubernetes  |
+|                             |  scoped to the underlying kubernetes     | namespace.                            |
+|                             |  object's kubernetes context.            |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  kubectl                    |  Access kubectl scoped to the underlying | GKE Cluster, EKS Cluster, Kubernetes  |
+|                             |  kubernetes object's kubernetes context. | namespace.                            |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  reauthorize                |  Reauthorize with the cluster API        | Any kubernetes node.                  |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  tunnel                     |  Forward a Pod port to your local machine| Pod                                   |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  describe                   |  Describe the underlying kubernetes      | Any kubernetes node                   |  
+|                             |  object.                                 |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  export                     |  Export a cluster or cluster namespace's | GKE Cluster, EKS Cluster, Kubernetes  |
+|                             |  context so that it may be used with     | namespace.                            |
+|                             |  external applications outside of Bcome  |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  info                       |  Cluster information.                    | GKE Cluster, EKS Cluster.             |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  info_dump                  |  Cluster information dump.               | GKE Cluster, EKS Cluster.             |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  interactive                |  Execute commands in an interative shell | Any kubernetes node.                  |
+|                             |  against all containers.                 |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  pseudo_tty                 |  Execute a command using an interactive  | Kubernetes container.                 | 
+|                             |  session.                                |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  sh                         |  Enter a shell on a running container.   | Kubernetes container.                 |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  focus *object*             |  Switch workspace to focus on a specific | GKE Cluster, EKS Cluster.             |  
+|                             |  kubernetes resource type. E.g. for      |                                       |
+|                             |                                          |                                       |
+|                             |  e.g. for secrets, *focus secret*        |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  vrender *view*             |  Render an alternative hierarchy view.   | GKE Cluster, EKS Cluster.             |
+|                             |                                          |                                       |
+|                             |  Enter 'menu' to see available options.  |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+ 
+|  vfocus *view*              |  Switch your workspace to use an         | GKE Cluster, EKS Cluster.             |
+|                             |  alternative hierarchy view.             |                                       |
+|                             |                                          |                                       |
+|                             |  Enter 'menu' to see available options.  |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+
 
 Miscellaneous 
 -------------
 
 +-----------------------------+------------------------------------------------------+---------------------------------------+
 |                             |                                                      |                                       |
-|  command                    |  description                                         | node availability                     |
+|  command                    |  description                                         | node type                             |
 +=============================+======================================================+=======================================+
 |  reload		      |  Re-populate an inventory from its                   | Inventory, Sub-selected Inventory     |
 |			      |  source, e.g. reload all servers from                |				             |
