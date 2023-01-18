@@ -192,6 +192,9 @@ Informational
 |                             |                                      |                                       |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
+|  config                     |  Display the config for a node's     | Any kubernetes node.                  | 
+|                             |  associated kubernetes object.       |                                       |
++-----------------------------+--------------------------------------+---------------------------------------+
 |  tree                       |  Print a tree view of all child      | Collection, Inventory, Sub-selected   |
 |                             |  nodes and their sub-nodes.          | Inventory, Merged Inventory.          |
 +-----------------------------+--------------------------------------+---------------------------------------+
@@ -205,7 +208,7 @@ Informational
 |  tags                       |  List all cloud provider tags/labels | Server, Inventory, Sub-selected       | 
 | 			      |  associated with the server(s)       | Inventory, Merged Inventory.          |                             
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  routes		      |  Print SSH routing tree.             | All				     |
+|  routes		      |  Print SSH routing tree.             | All, excluding Kubernetes nodes       |
 +-----------------------------+--------------------------------------+---------------------------------------+
 
 
