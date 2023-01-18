@@ -43,10 +43,11 @@ Navigation commands
 |                             |                                      |                                       |                                                   
 |   command                   |  description                         | node availability                     |
 +=============================+======================================+=======================================+
-|   cd *identifier*           |  Enter a console session for a child | Collection, Inventory, Sub-selected   |
+|   cd *name*                 |  Enter a console session for a child | Collection, Inventory, Sub-selected   |
 |			      |  node.		      	             | Inventory, Merged Inventory.          |
-|			      |  				     |					     |
+|   cd *name1*:*name2*        |  				     |					     |
 |			      |	 Console only			     |					     |
+|   cd #rootname:name2        |                                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
 |   back                      |  Return to the parent node           | All                                   |
 |                             |  console session.                    |                                       |
