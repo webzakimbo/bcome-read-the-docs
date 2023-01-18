@@ -43,9 +43,9 @@ Navigation commands
 |                             |                                      |                                       |                                                   
 |   command                   |  description                         | node availability                     |
 +=============================+======================================+=======================================+
-|   cd *name*                 |  Enter a console session for a child | Collection, Inventory, Sub-selected   |
+|   cd name                   |  Enter a console session for a child | Collection, Inventory, Sub-selected   |
 |			      |  node.		      	             | Inventory, Merged Inventory.          |
-|   cd *name1*:*name2*        |  				     |					     |
+|   cd name1:name2            |  				     |					     |
 |			      |	 Console only			     |					     |
 |   cd #rootname:name2        |                                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
