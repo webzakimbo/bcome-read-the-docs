@@ -182,6 +182,9 @@ Informational
 |                             |                                      | Inventory, Merged Inventory.          |
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
+|  lsr                        |  Reload (e.g. from remote) then list | Any Kubernetes node.                  | 
+|                             |  all child nodes.                    |                                       |
++-----------------------------+--------------------------------------+---------------------------------------+
 |  lsa                        |  List all active child nodes         | Collection, Inventory, Sub-selected   |
 |                             |                                      | Inventory, Merged Inventory.          |
 |                             |  See :ref:`SELECTION_COMMANDS`       |                                       |
