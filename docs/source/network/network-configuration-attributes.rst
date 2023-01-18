@@ -112,8 +112,8 @@ Google Cloud platform specific network attributes
 |  filters  ('gcp' provider)  | A filter string to filter   |  Optional for 'gcp' provider type     | As an example, to return running instances, set filter to "status:running"     |
 |                             | instances returned by GCP.  |       				    | For further information on topic filtering, see |GCP_TOPIC_FILTERING|_.        |
 |                             |                             |                                       |                                                                                |
-|                             |                             |                                       | You may also filter by_label. Have a look at our |GUIDES|_ site for examples   |
-|                             |                             |                                       | of this.                                                                       |
+|                             |                             |                                       | You may also filter by label. Search for 'by_label' in our |GUIDES|_ for       |
+|                             |                             |                                       | of examples this.                                                              |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
 |  service_account_credentials| The name of the service     |  Optional for 'gcp' provider type     | Required for the service_account authentication scheme only. See               | 
 |                             | account credentials json    |       				    | :doc:`../getting-started/prepare-gcp-access`.                                  |
