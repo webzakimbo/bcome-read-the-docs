@@ -113,17 +113,19 @@ Selection Commands
 +-----------------------------+--------------------------------------+---------------------------------------+
 
 
-SSH Commands
-------------
+Interactive Commands
+--------------------
+
+Interactive are those that interact directly with servers or containters.
 
 +-----------------------------+--------------------------------------+---------------------------------------+
 |                             |                                      |                                       |
-|  command                    |  description                         | node type                             |
+|  command                    |  description                         | available to node                     |
 +=============================+======================================+=======================================+
-|  ping			      |  Test connectivity against all       | All				     |
+|  ping			      |  Test connectivity against all       | All excluding Kubernetes.             |
 |			      |  servers in the selection.	     |					     |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  run *command1*, *command2* |  Execute a command to be run         | All			             |
+|  run *command1*, *command2* |  Execute a command to be run         | Any (runs over entire selection)	     |
 |			      |  against *all* servers contained in  |					     |
 |			      |  the selection.	                     |				             |
 +-----------------------------+--------------------------------------+---------------------------------------+
@@ -139,7 +141,7 @@ SSH Commands
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  pseudo_tty *command*       |  Invoke a pseudo-tty session.	     | Server				     |
 +-----------------------------+--------------------------------------+---------------------------------------+
-|  execute_script             |  Execute a local bash-script over ssh| All			             |	
+|  execute_script             |  Execute a local bash-script over ssh| Server			             |	
 |  *path/to/bash/script*      |  against all servers in the          |					     |
 |			      |  selection.			     |					     |
 +-----------------------------+--------------------------------------+---------------------------------------+
@@ -268,6 +270,12 @@ Kubernetes
 |                             |                                          |                                       |
 |                             |  Enter 'menu' to see available options.  |                                       |
 +-----------------------------+------------------------------------------+---------------------------------------+
+|  read                       |  Output the contents of a Kubernetes     | K8Cluster Secret                      |
+|                             |  secret (decoded).                       |                                       |
++-----------------------------+------------------------------------------+---------------------------------------+
+|  trigger                    |  Trigger a cronjob.                      | K8Cluster Cronjob                     |
++-----------------------------+------------------------------------------+---------------------------------------+
+
 
 
 Miscellaneous 
