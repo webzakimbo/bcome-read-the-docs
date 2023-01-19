@@ -195,7 +195,8 @@ Informational
 |                             |  *Console only*                      |                                       |
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  tree                       |  Print a tree view of all child      | Collection, Inventory, Sub-selected   |
-|                             |  nodes and their sub-nodes.          | Inventory, Merged Inventory.          |
+|                             |  nodes and their sub-nodes, or print | Inventory, Merged Inventory.          |
+|  tree(depth: integer)       |  a tree view up to depth *integer*.  |                                       |                     
 +-----------------------------+--------------------------------------+---------------------------------------+
 |  meta                       |  List all Metadata available to      | All				     |
 |			      |  the current node.    	             |					     |
