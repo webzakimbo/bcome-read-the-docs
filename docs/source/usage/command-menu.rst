@@ -270,8 +270,8 @@ Kubernetes
 |                             |                                          |                                       |
 |                             |  Enter 'menu' to see available options.  |                                       |
 +-----------------------------+------------------------------------------+---------------------------------------+
-|  read                       |  Output the contents of a Kubernetes     | K8Cluster Secret                      |
-|                             |  secret (decoded).                       |                                       |
+|  read                       |  Decode and output the contents of a     | K8Cluster Secret                      |
+|                             |  kubernetes secret (decoded).            |                                       |
 +-----------------------------+------------------------------------------+---------------------------------------+
 |  trigger                    |  Trigger a cronjob.                      | K8Cluster Cronjob                     |
 +-----------------------------+------------------------------------------+---------------------------------------+
