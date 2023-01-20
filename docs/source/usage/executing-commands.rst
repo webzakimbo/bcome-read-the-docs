@@ -83,6 +83,8 @@ OR, to pass in parameters
 Invoking commands from orchestration scripts
 -------------------------------------------
 
+An orchestration script is just a Ruby script configured to be attached, and executed in the context, of a specific Bcome node.
+
 If you have a node instance, for example :doc:`../core-concepts/node`, then any available command may be invoked directly on it.
 
 For example, given a node in an instance var @node, and a command, :foo, you would:
@@ -94,3 +96,11 @@ For example, given a node in an instance var @node, and a command, :foo, you wou
 .. hint::
 
    Any command, be they in-built menu commands (see :doc:`command-menu`), public-methods on a given node object, or a custom-command you've defined yourself in the Registry (see :doc:`../registry/overview`), is accessible in this way.
+
+For more information on writing orchestration scripts see :doc:`../orchestration/external-ruby-scripting` and :doc:`../orchestration/internal-ruby-scripting`.
+
+For information on how to integrate custom scripts into your installation, see :doc:`../registry/overview`
+
+
+
+
