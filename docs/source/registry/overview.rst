@@ -13,7 +13,7 @@ Each Bcome node has its own Registry, the framework giving you a means of adding
 
 .. note::
 
-  The Registry is designed for reusability, and so you may associate the same tasks with different nodes, DRY'ing up your code.
+  The Registry is designed for reusability so that you may associate the same tasks with different nodes, DRY'ing up your code.
 
   Have a look also at the :doc:`../metadata/metadata-framework`. By associating context-specific data to your nodes, the same Registry task re-used becomes way more powerful. 
 
