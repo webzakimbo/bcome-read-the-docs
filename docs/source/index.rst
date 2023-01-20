@@ -57,6 +57,9 @@
     notable/run
     notable/tunnel
     notable/pseudo-tty
+    notable/interactive-kubectl
+    notable/interactive-helm
+    notable/k8-sh
 
 .. toctree::
     :maxdepth: 1
