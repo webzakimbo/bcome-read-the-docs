@@ -7,15 +7,13 @@ Requirements
 
 - Ruby 2.5 or greater.
 
-- A Ruby compatible OS.
+- If you intend to interact with servers over SSH you'll need a running ssh-agent with your keys added:  for programmatic access, Bcome makes use of your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
 
-- If you intend to interact with servers over SSH, you'll need a running ssh-agent with your keys added.  For programmatic access, Bcome makes use of your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
+- ``kubectl`` installed and in PATH if you intended to interact with Kubernetes clusters (contextual kubectl, tied to a Kubernetes clustes or namespace).
 
-- ``kubectl`` installed and in PATH if you intended to interact with Kubernetes clusters.
+- ``helm`` installed and in PATH if you intend to interact with Kubernetes clusters and wish to add a Helm hook (contextual helm invocation, tied to a Kubernetes cluster or namespace)
 
-- ``helm`` installed and in PATH if you intend to interact with Kubernetes clusters and wish to add a Helm hook.
-
-- ``Terraform`` installed and in PATH if you intend to add a Terraform hook.
+- ``terraform`` installed and in PATH if you intend to add a Terraform hook, where a terraform workspace is associated with a specific Bcome node, with access to Bcome's metadata framework.
 
 .. include:: ssh-version-requirement-note.rst
 
