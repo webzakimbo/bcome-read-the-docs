@@ -69,8 +69,7 @@ Used to configure a node
 |                             | specify a GKE cluster.      |                                       |                                                                                |
 |                             |                             |                                       | See :ref:`CLUSTER_ATTRS`.                                                      |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
-| 
-
+ 
 
 .. note::
 
@@ -167,13 +166,16 @@ A hash of attributes uses to populate the top-level ``cluster`` attribute for `e
 |                             |                             |          |                                                                                |
 |   attribute key             |  description                | optional |   notes                                                                        |
 +=============================+=============================+==========+================================================================================+
-|  location                   | The zone where the cluster  | no       | GKE nodes only, i.e. nodes of type gke-k8s-cluster.                            |
-|                             | is located, e.g.            |          |                                                                                |
+|  location                   | The zone where the cluster  | Required | GKE nodes only, i.e. nodes of type gke-k8s-cluster.                            |
+|                             | is located, e.g.            | for GKE. |                                                                                |
 |                             | europe-west1-c.             |          |                                                                                |
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
-|  name                       | Cluster name.               | no       | Either GKE or EKS nodes.                                                       |
+|  name                       | Cluster name.               | Required | Either GKE or EKS nodes.                                                       |
+|                             |                             | for GKE  |									        |
+|                             |                             | and EKS  |									        |
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
-|  account_id                 | AWS account id.             | no       | EKS nodes only, i.e. nodes of type eks-k8s-cluster.	                        |      
+|  account_id                 | AWS account id.             | Required | EKS nodes only, i.e. nodes of type eks-k8s-cluster.	                        |
+|                             |                             | for EKS. | 										|    
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
 
 .. _SSH_ATTRS:
