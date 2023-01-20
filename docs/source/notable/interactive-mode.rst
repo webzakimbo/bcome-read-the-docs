@@ -15,7 +15,7 @@ Having established a connection, Interactive mode then provides a secondary inte
 
    Interactive mode can be dangerous.
 
-   You will be executing commands in parallel on every machine in your selection.  Be sure you understand what you're running, and with what privileges before using this function.
+   You will be executing commands in parallel on every machine in your selection.  Be sure you understand what you're running (and with what privileges) before using this function.
 
 Interactive mode is useful when managing groups of servers/containers in a real-time scenario for example:
 
