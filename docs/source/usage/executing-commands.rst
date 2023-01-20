@@ -66,7 +66,7 @@ OR, a dot-notation example passing in parameters:
 
    When you a enter a Bcome session you are in the scope of an instance of a Ruby object (see: :doc:`../core-concepts/node`), representing the current node.
 
-   Each level within your Bcome instance will be associated with a different node object.
+   Each node within your Bcome instance will be represented by a different Ruby object.
 
 Invoking commands with Keyed-access
 -----------------------------------
