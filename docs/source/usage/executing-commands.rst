@@ -56,8 +56,7 @@ OR, a dot-notation example passing in parameters, for e.g. ``run``:
 .. code-block:: bash
 
   > bcome
-  > child.grandchild.run "ls -al"
-
+  > child.grandchild.run "/some/command parameter"
 
 .. note::
 
@@ -74,6 +73,12 @@ To invoke command 'foo' available to node parent:child:grandchild, you would ent
 .. code-block:: bash
 
    > bcome child:grandchild:foo
+
+OR, to pass in parameters
+
+.. code-block:: bash
+
+  > bcome child:grandchild:run "/some/command parameter"
 
 Invoking commands from orchestration scripts
 -------------------------------------------
