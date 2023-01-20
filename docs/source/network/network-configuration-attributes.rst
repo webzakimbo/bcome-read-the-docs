@@ -170,7 +170,7 @@ A hash of attributes uses to populate the top-level ``cluster`` attribute for `e
 |                             | is located, e.g.            | for GKE. |                                                                                |
 |                             | europe-west1-c.             |          |                                                                                |
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
-|  name                       | Cluster name.               | Required | Either GKE or EKS nodes.                                                       |
+|  name                       | Cluster name.               | Required | GKE and EKS nodes.                                                             |
 |                             |                             | for GKE  |									        |
 |                             |                             | and EKS  |									        |
 +-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
