@@ -27,11 +27,50 @@ Given command 'foo' available to node parent:child:grandchild, how would you inv
    > bcome child:grandchild
    > foo
 
+OR
+
+.. code-block:: bash
+
+  > bcome
+  > cd child:grandchild
+  > foo
+
+OR 
+
+.. code-block:: bash
+
+  > bcome
+  > cd child
+  > cd grandchild
+  > foo
+
+OR, using dot-notation
+
+.. code-block:: bash
+
+  > bcome
+  > child.granchild.foo
+
+OR, a dot-notation example passing in parameters, for e.g. ``run``:
+
+.. code-block:: bash
+
+  > bcome
+  > child.grandchild.run "ls -al"
+
+
 .. note::
 
    When you an enter an IRB session, you are in the scope of an instance of a Ruby object (see: :doc:`../core-concepts/node`).
 
    Bcome's Console assigns an instance of your node as this session object.
+
+Invoking a command in the console using dot notation
+----------------------------------------------------
+
+
+
+
 
 
 Invoking commands with Keyed-access
