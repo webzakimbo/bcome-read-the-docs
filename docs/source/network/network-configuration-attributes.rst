@@ -32,8 +32,8 @@ Used to configure a node
 |   network	              | A hash of attributes        | yes				    | If left blank, any Inventories inheriting this configuration will not be       |
 |  			      | defining a Cloud Provider   | 					    | populated with servers unless a Statically defined manifest has been configured|
 |                             | configuration.              |                                       | 									             |
-|                             |                             |                                       | Restricted to nodes of type 'collection', 'inventory', 'gcp-k8s-cluster' and   |
-| 			      |	         	            |					    | 'aws-k8s-cluster'.                                                             |
+|                             |                             |                                       | Restricted to nodes of type 'collection', 'inventory', 'gke-k8s-cluster' and   |
+| 			      |	         	            |					    | 'eks-k8s-cluster'.                                                             |
 |                             |                             |                                       |                                                                                |			
 |			      |				    |					    | See :ref:`NETWORK_ATTRS`.                        			             |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
@@ -65,6 +65,12 @@ Used to configure a node
 |                             |                             |                                       | Hidden nodes may still be interacted with, but will not appear in the          |
 |                             |                             |                                       | user interface.                                                                |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
+| cluster                     | A hash of attributes used to| yes                                   | Restricted to nodes of type 'gke-k8s-cluster' and 'eks-k8s-cluster' only.      |
+|                             | specify a GKE cluster.      |                                       |                                                                                |
+|                             |                             |                                       | See :ref:`CLUSTER_ATTRS`.                                                      |
++-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
+| 
+
 
 .. note::
 
@@ -149,6 +155,26 @@ AWS specific network attributes
 |                             | during the lookup request to|                                       |                                                                                |
 |                             | ec2.                        |                                       |                                                                                |
 +-----------------------------+-----------------------------+---------------------------------------+--------------------------------------------------------------------------------+
+
+.. _CLUSTER_ATTRS:
+
+EKS & GKE Cluster Attributes
+----------------------------
+
+A hash of attributes uses to populate the top-level ``cluster`` attribute for `eks-k8s-cluster` or `gke-k8s-cluster` nodes.
+
++-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
+|                             |                             |          |                                                                                |
+|   attribute key             |  description                | optional |   notes                                                                        |
++=============================+=============================+==========+================================================================================+
+|  location                   | The zone where the cluster  | no       | GKE nodes only, i.e. nodes of type gke-k8s-cluster.                            |
+|                             | is located, e.g.            |          |                                                                                |
+|                             | europe-west1-c.             |          |                                                                                |
++-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
+|  name                       | Cluster name.               | no       | Either GKE or EKS nodes.                                                       |
++-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
+|  account_id                 | AWS account id.             | no       | EKS nodes only, i.e. nodes of type eks-k8s-cluster.	                        |      
++-----------------------------+-----------------------------+----------+--------------------------------------------------------------------------------+
 
 .. _SSH_ATTRS:
 

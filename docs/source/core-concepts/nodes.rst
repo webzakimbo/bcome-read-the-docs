@@ -57,7 +57,7 @@ This structure contextualises configuration, and allows for its re-use.
 
 .. note::
 
-   Declared nodes can be of type: ``collection``, ``inventory``, ``inventory-subselect``, ``inventory-merge``, ``aws-k8s-cluster``, or ``gcp-k8s-cluster``
+   Declared nodes can be of type: ``collection``, ``inventory``, ``inventory-subselect``, ``inventory-merge``, ``eks-k8s-cluster``, or ``gke-k8s-cluster``
 
 
 Declared Node Types
@@ -185,13 +185,13 @@ It requires contributing Inventories and/or contributing Sub-Selected-inventorie
 GKE Cluster
 ^^^^^^^^^^^
 
-A GKE Kubernetes Cluster, hosted in Google Cloud Platform. It is denoted by type ``gcp-k8s-cluster``.
+A GKE Kubernetes Cluster, hosted in Google Cloud Platform. It is denoted by type ``gke-k8s-cluster``.
 
 .. code-block:: yaml
 
    ---
    "foo:bar:production-cluster":
-     type: gcp-k8s-cluster
+     type: gke-k8s-cluster
      description: My production cluster
      cluster:
        location: gcp-location 
@@ -207,13 +207,13 @@ A GKE Kubernetes Cluster, hosted in Google Cloud Platform. It is denoted by type
 AWS Cluster
 ^^^^^^^^^^^
 
-An EKS Kubernetes cluster hosted in Amazon Web Services. It is denoted by type ``aws-k8s-cluster``.
+An EKS Kubernetes cluster hosted in Amazon Web Services. It is denoted by type ``eks-k8s-cluster``.
 
 .. code-block:: yaml
 
    ---
    "foo:bar:production-cluster":
-     type: aws-k8s-cluster
+     type: eks-k8s-cluster
      description: My production cluster
      cluster:
        name: CLUSTER_NAME
