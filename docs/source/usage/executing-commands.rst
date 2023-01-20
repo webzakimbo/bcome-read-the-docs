@@ -17,7 +17,7 @@ Let's imagine you have :doc:`../core-concepts/nodes` laid out in the following p
            └── grandchild
 
 
-Now let's say you want to invoke a command on the `grandchild` node. This command may be available from the standard menu for this node type, it may be a method available from the Ruby language (each node being a Ruby object at its core), or your method may be a custom task you've added to your Bcome Registry (See :doc:`../registry/overview` and associated with `grandchild`.  
+Now let's say you want to invoke a command on the `grandchild` node. This command may be available from the standard menu for this node type, it may be a method available from the Ruby language (each node being a Ruby object at its core), or your method may be a custom task you've added to your Bcome Registry (See :doc:`../registry/overview`) and associated with the `grandchild` node.  
 
 What are the options for invoking this command?
 
