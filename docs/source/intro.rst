@@ -1,13 +1,15 @@
 *******************
-Bcome Documentation
+Bcome documentation
 *******************
 
 .. meta::
-   :description lang=en: Welcome to the Bcome Documentation - all you need to configure Bcome to create your DevOps Control Panel
+   :description lang=en: Bcome documentation - all you need to install & configure the Bcome framework.
 
-Welcome to the Bcome Documentation.  All you need to configure Bcome to create your DevOps Control Panel.
+Welcome to our documentation
 
-For functionality demonstrations, please see the |GUIDES|_.
+For example configurations and functionality demonstrations please see the |GUIDES|_.
+
+Starting from scratch? Jump to our :doc:`../getting-started/requirements`. or :doc:`../getting-started/create-project-structure`.
 
 :doc:`whats-new-in-3.0.0`
 

@@ -6,22 +6,22 @@
 .. _GUIDES: https://guides.bcome.com 
 
 .. |ROUTES_GUIDE| replace:: routes guide
-.. _ROUTES_GUIDE: https://guides.bcome.com/en/2.0.0/built-in-commands/routes.html
+.. _ROUTES_GUIDE: https://guides.bcome.com/en/latest/built-in-commands/routes.html
 
 .. |GCP_AUTH_SA_GUIDE| replace:: GCP Service Account authentication guide
-.. _GCP_AUTH_SA_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/gcp-service-account.html
+.. _GCP_AUTH_SA_GUIDE: https://guides.bcome.com/en/latest/drivers/gcp-service-account.html
 
 .. |SSH_SETTINGS_ATTRS| replace:: SSH Settings Attributes
-.. _SSH_SETTINGS_ATTRS: https://docs.bcome.com/en/2.0.0/network/network-configuration-attributes.html#ssh-settings-attributes
+.. _SSH_SETTINGS_ATTRS: https://docs.bcome.com/en/latest/network/network-configuration-attributes.html#ssh-settings-attributes
 
 .. |GCP_OAUTH_GUIDE| replace:: GCP OAuth 2.0 authentication guide
-.. _GCP_OAUTH_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/gcp-oauth.html
+.. _GCP_OAUTH_GUIDE: https://guides.bcome.com/en/latest/drivers/gcp-oauth.html
 
 .. |AWS_AUTH_GUIDE| replace:: AWS EC2 authentication guide
-.. _AWS_AUTH_GUIDE: https://guides.bcome.com/en/2.0.0/drivers/ec2.html
+.. _AWS_AUTH_GUIDE: https://guides.bcome.com/en/latest/drivers/ec2.html
 
 .. |REGISTRY_INTERNAL_SCRIPT| replace:: Internal Script Integration Guide
-.. _REGISTRY_INTERNAL_SCRIPT: https://guides.bcome.com/en/2.0.0/the-registry/internal-commands.html
+.. _REGISTRY_INTERNAL_SCRIPT: https://guides.bcome.com/en/latest/the-registry/internal-commands.html
 
 .. |BCOME_SOURCE| replace:: github source
 .. _BCOME_SOURCE: https://github.com/webzakimbo/bcome
