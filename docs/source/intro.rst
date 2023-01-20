@@ -9,7 +9,7 @@ Welcome to our documentation
 
 For example configuration and functionality demonstrations please see the |GUIDES|_.
 
-Starting from scratch? Jump to our :doc:`../getting-started/requirements`. or :doc:`../getting-started/create-project-structure`.
+Starting from scratch? Jump to our :doc:`../getting-started/requirements` or :doc:`../getting-started/create-project-structure`.
 
 :doc:`whats-new-in-3.0.0`
 
