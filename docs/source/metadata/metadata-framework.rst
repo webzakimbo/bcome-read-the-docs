@@ -4,7 +4,7 @@
 The Metadata Framework
 ======================
 
-When scripting or otherwise interacting with the Bcome Console, the framework will let you access used-defined metadata.  
+When scripting or otherwise interacting with the Bcome Console, the framework will let you access user-defined metadata.  
 
 This is useful when writing orchestration scripts.
 
