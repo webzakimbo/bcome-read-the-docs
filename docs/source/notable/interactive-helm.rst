@@ -3,7 +3,7 @@
 
 .. include:: ../urls.rst
 
-**********
-Helm shell
-**********
+****************
+Interactive Helm
+****************
 

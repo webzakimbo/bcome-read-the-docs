@@ -3,7 +3,6 @@
 
 .. include:: ../urls.rst
 
-*************
-Kubectl shell
-*************
-
+*******************
+Interactive Kubectl
+*******************
