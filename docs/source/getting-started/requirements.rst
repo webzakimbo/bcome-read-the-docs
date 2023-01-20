@@ -7,7 +7,7 @@ Requirements
 
 - Ruby 2.5 or greater.
 
-- If you intend to interact with servers over SSH you'll need a running ssh-agent with your keys added:  for programmatic access, Bcome makes use of your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
+- A running ssh-agent with your keys added if you intend to interact with servers over SSH. For programmatic access, Bcome makes use of your ``SSH_AUTH_SOCK`` environment variable to find your ssh-agent (and then your keys).
 
 - ``kubectl`` installed and in PATH if you intended to interact with Kubernetes clusters (contextual kubectl, tied to a Kubernetes clustes or namespace).
 
