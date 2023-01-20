@@ -7,9 +7,9 @@
 Interactive Mode
 ****************
 
-Interactive mode allows you to enter repeated commands in a transparent context to either single, or multiple servers without having to enter repeated ``run`` commands (see: :doc:`../usage/command-menu`).
+Interactive mode allows you to enter repeated commands in a transparent context to either single, or multiple servers/containers without having to enter repeated ``run`` commands (see: :doc:`../usage/command-menu`).
 
-Having established an SSH connection to all servers in scope, Interactive mode then provides a secondary interactive pseudo-ssh shell, following which any commands you enter are executed on every server.
+Having established a connection, Interactive mode then provides a secondary interactive pseudo-shell, following which any commands you enter are executed on every server/container.
 
 .. warning::
 
@@ -17,7 +17,7 @@ Having established an SSH connection to all servers in scope, Interactive mode t
 
    You will be executing commands in parallel on every machine in your selection.  Be sure you understand what you're running, and with what privileges before using this function.
 
-Interactive mode is useful when managing groups of servers in a real-time scenario for example:
+Interactive mode is useful when managing groups of servers/containers in a real-time scenario for example:
 
 * to apply security patches
 * to test en masse for vulnerabilities
@@ -26,7 +26,7 @@ Interactive mode is useful when managing groups of servers in a real-time scenar
 
 .. note::
 
-   Interactive mode will create a connection to every server that is a child or grand-child of the current node. 
+   Interactive mode will create a connection to every server/container that is a child or grand-child of the current node. 
    
    Once connected, connections are cached for speed with reconnections automatic.
 
