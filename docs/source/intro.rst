@@ -7,7 +7,7 @@ Bcome documentation
 
 Welcome to our documentation
 
-For example configurations and functionality demonstrations please see the |GUIDES|_.
+For example configuration and functionality demonstrations please see the |GUIDES|_.
 
 Starting from scratch? Jump to our :doc:`../getting-started/requirements`. or :doc:`../getting-started/create-project-structure`.
 
