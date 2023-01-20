@@ -28,7 +28,7 @@ Configure your cloud authorizations
 
 To populate your installation with servers or load in a Kubernetes cluster you will need to add an authorization.  
 
-An authorization may be associated with more than one node, and you may add as many different authorizations as you like to your installation, adding as many different AWS or GCP accounts to your project as yyou like.  
+An authorization may be associated with more than one node, and you may add as many different authorizations as you like to your installation, adding as many different AWS or GCP accounts to your project as you need.  
 
 When you interact with a Bcome node configured for an authorisation, the framework will authenticate you against the cloud provider in question so that it may retrieve resources.
 
