@@ -17,6 +17,6 @@ Run may be invoked with the ``run`` command on any node. See :doc:`../usage/exec
 
 .. note::
 
-   When in the Console, Bcome caches all SSH connections, with re-connection automatic, resulting in faster execution of repeated 'run' commands.
+   When in console mode, Bcome caches all SSH connections, with re-connection automatic, resulting in faster execution of repeated 'run' commands.
 
 For more information on optimising your SSH connections see :doc:`../usage/optimising-ssh`
