@@ -5,9 +5,11 @@
 Registry Overview
 *****************
 
-The purpose of the Registry is to place custom method hooks directly onto your nodes.  These method hooks are then surfaced within Bcome, and allow you to call custom functionality within the context of the nodes associated with them.
+The purpose of the Registry is to place custom method hooks directly onto your :doc:`../core-concepts/nodes`.  These method hooks are then surfaced within Bcome, and allow you to call custom functionality within the context of the nodes associated with them.
 
-Each Bcome node has its own Registry, the framework giving you a means of adding context-specific method hooks to your application.  It is in this way that you are able to build up unique (re-usable) interfaces on top of your nodes.
+The registry may also be used to add method hooks onto nodes retrieved dynamically, such as nodes representing Kubernetes objects.
+
+Each Bcome node has its own Registry, the framework giving you a means of adding context-specific method hooks to your application.  In this way that you are able to build DRY interfaces, reusing method hooks in different contexts.
 
 .. note::
 
