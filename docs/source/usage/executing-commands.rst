@@ -55,19 +55,18 @@ OR, using dot-notation
   > bcome
   > child.granchild.foo
 
-OR, a dot-notation example passing in parameters, for e.g. ``run``:
+OR, a dot-notation example passing in parameters:
 
 .. code-block:: bash
 
   > bcome
-  > child.grandchild.run "/some/command parameter"
+  > child.grandchild.run "parameter"
 
-.. note::
+.. hint::
 
-   When you an enter an IRB session, you are in the scope of an instance of a Ruby object (see: :doc:`../core-concepts/node`).
+   When you a enter a Bcome session you are in the scope of an instance of a Ruby object (see: :doc:`../core-concepts/node`), representing the current node.
 
-   Bcome's Console assigns an instance of your node as this session object.
-
+   Each level within your Bcome instance will be associated with a different node object.
 
 Invoking commands with Keyed-access
 -----------------------------------
