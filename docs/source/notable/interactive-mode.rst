@@ -9,6 +9,10 @@ Interactive Mode
 
 Interactive mode allows you to enter repeated commands in a transparent context to either single, or multiple servers/containers without having to enter repeated ``run`` commands (see: :doc:`../usage/command-menu`).
 
+.. hint::
+
+  When in console mode you can use the in-built ``workon`` command to modify the scope of your selection.  See :doc:`../usage/command-menu` or enter ``menu`` when in console mode for more information on how to use ``workon``. 
+
 Having established a connection, Interactive mode then provides a secondary interactive pseudo-shell, following which any commands you enter are executed on every server/container.
 
 .. warning::
