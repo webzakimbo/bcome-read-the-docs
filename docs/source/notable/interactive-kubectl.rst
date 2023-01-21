@@ -7,7 +7,7 @@
 Interactive Kubectl
 *******************
 
-Access a Kubectl shell scoped to a particular Kubernetes Cluster or Namespace.
+Access a ``kubectl`` shell scoped to a particular Kubernetes Cluster or Namespace.
 
 * No need to set or change contexts
 * Bcome manages your kubeconfig
