@@ -7,11 +7,9 @@
 Interactive Kubectl
 *******************
 
-From any Kubernetes Cluster-level or Namespace-level Bcome node, you may access a contextualized (i.e. scoped) Kubectl shell
+Access a Kubectl shell scoped to a particular Kubernetes Cluster or Namespace.
 
-Bcome will - 
-
-* handle setting contexts & authorisation
-* manage you kubeconfig file
-* allow you to interact with more than one cluster at the same time
+* No need to set or change contexts
+* Bcome manages your kubeconfig
+* Interact with multiple clusters at once
 
