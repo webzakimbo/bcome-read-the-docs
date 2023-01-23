@@ -60,6 +60,7 @@
     notable/interactive-kubectl
     notable/interactive-helm
     notable/k8-sh
+    notable/k8-export-context
 
 .. toctree::
     :maxdepth: 1
