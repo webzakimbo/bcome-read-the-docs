@@ -7,9 +7,27 @@
 Interactive Kubectl
 *******************
 
-Access a ``kubectl`` shell scoped to a particular Kubernetes Cluster or Namespace.
+Overview
+^^^^^^^^
+
+Intercative Kubectl allows you to access a ``kubectl`` shell scoped to a particular Kubernetes Cluster or Namespace.
 
 * No need to set or change contexts
 * Bcome manages your kubeconfig
-* Interact with multiple clusters at once
+* Handle multiple clusters at once, irrespective of origin (EKS, GCP etc)
+* Interact with multiple clusters at once from orchestration scripts
+
+
+Usage
+^^^^^
+
+Interactive Kubectl by invoking ``kubectl`` on any Kubernetes Cluster node.  
+
+.. hint::
+
+  For guidance on how to execute commands, see :doc:`../executing-commands`
+
+
+
+
 
