@@ -42,7 +42,7 @@ Or access directly from your terminal, using keyed access:
 Switching shells
 ^^^^^^^^^^^^^^^^
 
-By default, this feature assumes a "/bin/sh" shell present on your container. When in console mode (see :doc:`../usage/navigation`) you may pick an alternative shell by reference when invoking `sh`.
+By default, this feature assumes a "/bin/sh" shell present on your container. In console mode (see :doc:`../usage/navigation`) you may pick an alternative shell by reference when invoking `sh`.
 
 For example, given the following available shells 
 
