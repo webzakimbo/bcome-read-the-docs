@@ -7,16 +7,37 @@
 Container shell
 ***************
 
-When in the scope of a Kubernetes container node, you may access a shell by invoking the "sh" method.
+When in the scope of a Kubernetes container node, you may access a shell on the remote container via Bcome.
 
 Usage
 ^^^^^
 
-Invoke ``sh`` on any Bcome Container node that supports the "/bin/sh" shell and you will enter a session on the container.
+Invoke ``sh`` on any Bcome node whose associated container supports the "/bin/sh" shell and you will enter a session on the container.
+
+Let's imagine the following Pod -> Container hierarchy:
+
+.. code-block:: bash
+
+   .
+   └── pod_foo
+       └── container_bar
+
+Access a console session and access a shell:
+
+.. code-block:: bash
+
+  > bcome pod_foo:container_bar
+  > sh
+
+Or access directly from your terminal, using keyed access:
+
+.. code-block:: bash
+
+  > bcome pod_foo:container_bar:sh
 
 .. note::
 
-  For guidance on how to execute commands, see :doc:`../usage/executing-commands`
+  For more guidance on how to execute commands, see :doc:`../usage/executing-commands`
 
 Switching shells
 ^^^^^^^^^^^^^^^^
