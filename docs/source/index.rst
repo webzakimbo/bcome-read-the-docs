@@ -60,7 +60,6 @@
     notable/interactive-kubectl
     notable/interactive-helm
     notable/k8-sh
-    notable/k8-export-context
 
 .. toctree::
     :maxdepth: 1
@@ -91,6 +90,14 @@
     registry/registry-configuration-attributes
     registry/registry-examples
 
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Kubernetes Hierarchies
+    :hidden:
+
+    k8-hierarchies/overview
+    k8-hierarchies/hierarchy-configuration-file
 
 .. toctree::
     :maxdepth: 1
