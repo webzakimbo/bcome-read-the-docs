@@ -7,7 +7,7 @@
 Container shell
 ***************
 
-When in the scope of a Kubernetes container node, you may access a shell invoking the "sh" method.
+When in the scope of a Kubernetes container node, you may access a shell by invoking the "sh" method.
 
 Usage
 ^^^^^
@@ -23,7 +23,7 @@ Switching shells
 
 By default, this feature assumes a "/bin/sh" shell present on your container.
 
-When in console mode (see :doc:`../usage/navigation`) you my pick an alternative shell by reference when invoking `sh`.
+When in console mode (see :doc:`../usage/navigation`) you may pick an alternative shell by reference when invoking `sh`.
 
 For example, given the following available shells 
 
@@ -34,7 +34,7 @@ For example, given the following available shells
 
 You would select `ash` by invoking the shell as follows:
 
-.. bash::
+.. code-block:: bash
 
   > sh("ash")
 
