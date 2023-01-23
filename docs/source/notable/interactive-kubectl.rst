@@ -32,7 +32,3 @@ You won't need to enter 'kubectl' when you enter a command, e.g. rather than 'ku
 .. hint::
 
   For guidance on how to execute commands, see :doc:`../usage/executing-commands`
-
-
-Any commands you enter will be passed directly to Kubectl.
-
