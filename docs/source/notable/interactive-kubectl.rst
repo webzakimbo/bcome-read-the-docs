@@ -25,7 +25,9 @@ You will need ``kubectl`` installed and in PATH.
 Usage
 ^^^^^
 
-Invoke ``kubectl`` on any Kubernetes Cluster node.
+Invoke ``kubectl`` on any Kubernetes Cluster node and you will be presented with a shell. Any commands you enter will be delegated to kubectl, in the context of a Cluster or Cluster Namespace depending on your Bcome node.
+
+You won't need to enter 'kubectl' when you enter a command, e.g. rather than 'kubectl get pods' you can just enter 'get pods'. Similarly, when you're in the context of a Cluster Namespace you won't have to enter "-n namespace", this will be managed for you by the framework.
 
 .. hint::
 
