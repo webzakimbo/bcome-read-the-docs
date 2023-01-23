@@ -21,7 +21,7 @@ Intercative Kubectl allows you to access a ``kubectl`` shell scoped to a particu
 Usage
 ^^^^^
 
-Interactive Kubectl by invoking ``kubectl`` on any Kubernetes Cluster node.  
+Invoke ``kubectl`` on any Kubernetes Cluster node.  
 
 .. hint::
 
