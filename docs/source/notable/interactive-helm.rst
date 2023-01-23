@@ -25,4 +25,4 @@ Invoke ``helm`` on any Kubernetes Cluster or Namespace node.
 
 .. hint::
 
-  For guidance on how to execute commands, see doc:`../usage/executing-commands` 
+  For guidance on how to execute commands, see :doc:`../usage/executing-commands`
